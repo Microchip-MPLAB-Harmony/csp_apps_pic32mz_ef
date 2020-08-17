@@ -67,27 +67,27 @@ void UART2_TX_InterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_DMA0_VECTOR, ipl1AUTO) DMA0_Handler (void)
+void __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
 {
     DMA0_InterruptHandler();
 }
 
-void __ISR(_DMA1_VECTOR, ipl1AUTO) DMA1_Handler (void)
+void __ISR(_DMA1_VECTOR, ipl1SRS) DMA1_Handler (void)
 {
     DMA1_InterruptHandler();
 }
 
-void __ISR(_UART2_FAULT_VECTOR, ipl1AUTO) UART2_FAULT_Handler (void)
+void __ISR(_UART2_FAULT_VECTOR, ipl1SRS) UART2_FAULT_Handler (void)
 {
     UART2_FAULT_InterruptHandler();
 }
 
-void __ISR(_UART2_RX_VECTOR, ipl1AUTO) UART2_RX_Handler (void)
+void __ISR(_UART2_RX_VECTOR, ipl1SRS) UART2_RX_Handler (void)
 {
     UART2_RX_InterruptHandler();
 }
 
-void __ISR(_UART2_TX_VECTOR, ipl1AUTO) UART2_TX_Handler (void)
+void __ISR(_UART2_TX_VECTOR, ipl1SRS) UART2_TX_Handler (void)
 {
     UART2_TX_InterruptHandler();
 }
