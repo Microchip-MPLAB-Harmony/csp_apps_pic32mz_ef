@@ -79,6 +79,8 @@ bool UART2_ReadIsBusy( void );
 
 size_t UART2_ReadCountGet( void );
 
+bool UART2_ReadAbort(void);
+
 bool UART2_WriteIsBusy( void );
 
 size_t UART2_WriteCountGet( void );
