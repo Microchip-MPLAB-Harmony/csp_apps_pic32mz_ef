@@ -63,7 +63,7 @@ void COMPARATOR_1_InterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_COMPARATOR_1_VECTOR, ipl1AUTO) COMPARATOR_1_Handler (void)
+void __ISR(_COMPARATOR_1_VECTOR, ipl1SRS) COMPARATOR_1_Handler (void)
 {
     COMPARATOR_1_InterruptHandler();
 }
