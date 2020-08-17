@@ -57,8 +57,7 @@ The following table shows the target hardware for the application projects.
 
     | Board | Switch name | LED name |
     | ----- | ----------- | -------- |
-    |[PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320010) | SW1 | LED1 |
-    | [PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320010-C) | SW1 | LED1 |
+    |[PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007) | SW1 | LED1 |
     |||
 
 8. Console displays the following message:
