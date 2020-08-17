@@ -5,10 +5,10 @@
     Microchip Technology Inc.
 
   File Name:
-    plib_spi3.c
+    plib_spi3_master.c
 
   Summary:
-    SPI3 Source File
+    SPI3 Master Source File
 
   Description:
     This file has implementation of all the interfaces provided for particular
@@ -39,7 +39,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#include "plib_spi3.h"
+#include "plib_spi3_master.h"
 
 // *****************************************************************************
 // *****************************************************************************
