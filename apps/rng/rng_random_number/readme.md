@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 peripheral library application examples for PIC32MZ EF family
+title: RNG random number 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # RNG random number
@@ -10,9 +17,8 @@ The RNG peripheral has two blocks. One of them is called True Random Number Gene
 
 ## Downloading and building the application
 
-To download or clone this application from Github, go to the [top level of the repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef) and click
-
-![clone](../../../docs/images/clone.png)
+To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef) and then click **Clone** button to clone this repository or download as zip file.
+This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
 
 Path of the application within the repository is **apps/rng/rng_random_number/firmware** .
 
