@@ -8,16 +8,15 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Harmony 3 peripheral library application examples for PIC32MZ EF family v3.0.0
+## Harmony 3 peripheral library application examples for PIC32MZ EF family  v3.0.0
 
 ### Development kit and demo application support
 
 Following table provides number of peripheral library examples available for different development kits.
 
-|                                              Development Kits                                                | Number of applications |
-| -------------------------------------------------------------------------------------------------------------| -- |
+| Development Kits  | MPLABx applications |
+|:-----------------:|:-------------------:|
 | [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007) | 28 |
-|||
 
 ### New Features
 
@@ -25,7 +24,7 @@ New features added in this release are as follows:
 
 - Applications migrated from csp repository to this new application repository for PIC32MZ EF development boards
 
-    
+
 ### Known Issues
 
 The current known issues are as follows:
@@ -35,6 +34,6 @@ The current known issues are as follows:
 ### Development Tools
 
 - [MPLAB® X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
-- [MPLAB® XC32 C/C++ Compiler v2.41](https://www.microchip.com/mplab/compilers)
 - MPLAB® X IDE plug-ins:
   - MPLAB® Harmony Configurator (MHC) v3.6.0
+- [MPLAB® XC32 C/C++ Compiler v2.41](https://www.microchip.com/mplab/compilers)
