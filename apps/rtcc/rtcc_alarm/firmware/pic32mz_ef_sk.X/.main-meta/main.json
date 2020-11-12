@@ -1,0 +1,77 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mz_ef_rtcc_alarm",
+		"version": "3.0.1",
+		"displayName": "RTCC alarm interrupt Example for PIC32MZ EF Family",
+		"projectName": "rtcc_alarm_pic32mz_ef_sk",
+		"shortDescription": "This example application shows how to use the RTCC to configure the time and generate the alarm.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32MZ-EF_DFP",
+			"semverRange": "^1.2.51"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32MZ2048EFH144",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit"
+			],
+			[
+				"Harmony", "Peripherals", "RTCC"
+			],
+			[
+				"Peripherals", "RTCC"
+			]
+		],
+		"peripherals": [
+			"RTCC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"PIC32MZ2048EFH144",
+			"PIC32MZ EF Family",
+			"RTC",
+			"RTT",
+			"RTCC",
+			"Timer",
+			"Real Time Clock Counter"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
