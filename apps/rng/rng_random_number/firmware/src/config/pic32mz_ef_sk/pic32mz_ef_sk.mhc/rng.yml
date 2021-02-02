@@ -1,0 +1,22 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: rng}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: RNGCON_PLEN}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '64'}
+  - type: Hex
+    attributes: {id: RNGCON_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: rng, value: '64'}
+- type: ElementPosition
+  attributes: {x: '340', y: '20', id: rng}
