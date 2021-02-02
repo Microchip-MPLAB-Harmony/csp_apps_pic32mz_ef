@@ -34,13 +34,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 348E1BD972633E1AFDBDCCD133C30C5B
-- generatedChecksum: 56962DA84F26ECD19CE20E68F3371BBB
+- generatedChecksum: 7C9A8CA91A8A9844A966082C5946984B
   logicalPath: config\pic32mz_ef_sk\peripheral\dmac
   name: plib_dmac.c
   physicalPath: peripheral\dmac
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 56962DA84F26ECD19CE20E68F3371BBB
+  userChecksum: 7C9A8CA91A8A9844A966082C5946984B
 - generatedChecksum: 753925FCEA9288B7FF55D7943B43A9EA
   logicalPath: config\pic32mz_ef_sk\peripheral\evic
   name: plib_evic.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7066CC390335CF75126E2A50C46E3BDD
-- generatedChecksum: 331D470BB11E8AF258329076F6A91090
+- generatedChecksum: D4A1E2329C517DB8AB49B9143079554F
   logicalPath: config\pic32mz_ef_sk\peripheral\dmac
   name: plib_dmac.h
   physicalPath: peripheral\dmac
   security: NON_SECURE
   type: HEADER
-  userChecksum: 331D470BB11E8AF258329076F6A91090
+  userChecksum: D4A1E2329C517DB8AB49B9143079554F
 - generatedChecksum: 3C465EE2268CD765C11300F75C6560CC
   logicalPath: config\pic32mz_ef_sk\peripheral\evic
   name: plib_evic.h
@@ -139,13 +139,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
-- generatedChecksum: C28E11AB7E036CF8F895B28BE0902893
+- generatedChecksum: 0874C33222DE6210BE6D505E600ED93F
   logicalPath: config\pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: C28E11AB7E036CF8F895B28BE0902893
+  userChecksum: 0874C33222DE6210BE6D505E600ED93F
 format_version: v1.0
 libraries: []
 settings:

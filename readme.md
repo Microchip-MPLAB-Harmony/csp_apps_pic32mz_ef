@@ -48,6 +48,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [DMAC CRC32 generate](apps/dmac/dmac_crc32_generate/readme.md) | This example application demonstrates how to use the DMAC peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC) |
 | [DMAC memory transfer](apps/dmac/dmac_memory_transfer/readme.md) | This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer |
 | [DMAC usart echo](apps/dmac/dmac_usart_echo/readme.md) | This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes |
+| [DMAC usart pattern matching](apps/dmac/dmac_usart_pattern_matching/readme.md) | This example application demonstrates USART echo using DMA pattern matching feature |
 | [DMT timeout](apps/dmt/dmt_timeout/readme.md) | This example application shows how the deadman timer resets by not clearing the deadman timer counter on switch press |
 | [EBI SRAM read write](apps/ebi/ebi_sram_read_write/readme.md) | This example application demonstrates how to use the EBI peripheral to write and read from the SRAM |
 | [GPIO interrupt](apps/gpio/gpio_led_on_off_interrupt/readme.md) | This example application demonstrate how to generate GPIO interrupt on switch press and release, and indicate the switch status using the LED |
@@ -57,6 +58,8 @@ The following applications are provided to demonstrate the typical or interestin
 | [OCMP compare mode](apps/ocmp/ocmp_compare_mode/readme.md) | This example application shows how to use the OCMP peripheral to generate an active low, active high, and toggle output on compare match |
 | [RNG random number](apps/rng/rng_random_number/readme.md) | This example application shows how to use the RNG Peripheral library to generate a pseudo-random number |
 | [RTCC alarm interrupt](apps/rtcc/rtcc_alarm/readme.md) | This example application shows how to use the RTCC to configure the time and generate the alarm |
+| [SPI ping pong with dma](apps/spi/spi_ping_pong_with_dma/readme.md) | This example demonstrates how to continuously transmit and receive data over SPI interface using contiguous ping pong buffers with DMA |
+| [SPI ping pong with dma chain](apps/spi/spi_ping_pong_with_dma_chain/readme.md) | This example demonstrates how to continuously transmit and receive data over  SPI interface using ping pong buffers with DMA channels in chain mode |
 | [SPI blocking](apps/spi/spi_self_loopback_blocking/readme.md) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data in a blocking manner |
 | [SPI interrupt](apps/spi/spi_self_loopback_interrupt/readme.md) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data using interrupt |
 | [SQI flash read write](apps/sqi/sqi_read_write/readme.md) | This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the SQI Serial Flash memory |
