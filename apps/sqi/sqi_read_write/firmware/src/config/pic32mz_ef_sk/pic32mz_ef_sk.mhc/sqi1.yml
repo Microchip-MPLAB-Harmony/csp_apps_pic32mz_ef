@@ -1,0 +1,25 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: sqi1}
+children:
+- type: Symbols
+  children:
+  - type: Comment
+    attributes: {id: SQI_CLK_DIV_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '*** SQI Clock Frequency Is Set To 50000000 for REFCLK2
+            Frequency At 50000000'}
+  - type: KeyValueSet
+    attributes: {id: SQI_CPHA}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sqi1, value: '0'}
+- type: ElementPosition
+  attributes: {x: '340', y: '20', id: sqi1}

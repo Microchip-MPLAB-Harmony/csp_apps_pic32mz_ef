@@ -105,6 +105,7 @@ void SQI1_Initialize(void)
     SQI1MEMSTAT     = SQI1_MEMSTAT_STATCMD_VAL | SQI1_MEMSTAT_STATBYTES_VAL |
                       SQI1_MEMSTAT_STATTYPE_VAL | SQI1_MEMSTAT_STATPOS_VAL;
 
+    IFS5CLR         = SQI1_INTERRUPT_FLAG_MASK;
     IEC5SET         = SQI1_INTERRUPT_ENABLE_MASK;
 
 }
@@ -119,6 +120,7 @@ void SQI1_DMASetup(void)
     SQI1INTENbits.BDDONEIE      = 0;
     SQI1INTENbits.BDDONEIE      = 1;
 
+    IFS5CLR                     = SQI1_INTERRUPT_FLAG_MASK;
     IEC5SET                     = SQI1_INTERRUPT_ENABLE_MASK;
 }
 
