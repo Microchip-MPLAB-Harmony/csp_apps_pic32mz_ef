@@ -20,13 +20,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8FC625BA54776FE611935B922EF68FD2
-- generatedChecksum: F81A00E640818EDFB9E79C9BD241AEF4
+- generatedChecksum: null
   logicalPath: ''
   name: main.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F81A00E640818EDFB9E79C9BD241AEF4
+  userChecksum: null
 - generatedChecksum: 348E1BD972633E1AFDBDCCD133C30C5B
   logicalPath: config\pic32mz_ef_sk\peripheral\clk
   name: plib_clk.c
@@ -34,13 +34,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 348E1BD972633E1AFDBDCCD133C30C5B
-- generatedChecksum: BD843E9678A06BF5E9530506E86161E7
+- generatedChecksum: 38E33CEE7D3F11AFC107321397EDD61A
   logicalPath: config\pic32mz_ef_sk\peripheral\dmac
   name: plib_dmac.c
   physicalPath: peripheral\dmac
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BD843E9678A06BF5E9530506E86161E7
+  userChecksum: 38E33CEE7D3F11AFC107321397EDD61A
 - generatedChecksum: 02A700E34C32FDD17AD4D690A81AC29A
   logicalPath: config\pic32mz_ef_sk\peripheral\evic
   name: plib_evic.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7066CC390335CF75126E2A50C46E3BDD
-- generatedChecksum: F2D9EEFDDDF4B52194AF2A59A18F91EF
+- generatedChecksum: D4A1E2329C517DB8AB49B9143079554F
   logicalPath: config\pic32mz_ef_sk\peripheral\dmac
   name: plib_dmac.h
   physicalPath: peripheral\dmac
   security: NON_SECURE
   type: HEADER
-  userChecksum: F2D9EEFDDDF4B52194AF2A59A18F91EF
+  userChecksum: D4A1E2329C517DB8AB49B9143079554F
 - generatedChecksum: 3C465EE2268CD765C11300F75C6560CC
   logicalPath: config\pic32mz_ef_sk\peripheral\evic
   name: plib_evic.h
@@ -139,13 +139,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
-- generatedChecksum: C28E11AB7E036CF8F895B28BE0902893
+- generatedChecksum: 0874C33222DE6210BE6D505E600ED93F
   logicalPath: config\pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: C28E11AB7E036CF8F895B28BE0902893
+  userChecksum: 0874C33222DE6210BE6D505E600ED93F
 format_version: v1.0
 libraries: []
 settings:

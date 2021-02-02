@@ -21,7 +21,7 @@
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -117,9 +117,35 @@ typedef enum
     DMAC_TRANSFER_EVENT_ERROR,
 
     /* No events yet. */
-    DMAC_TRANSFER_EVENT_NONE
+    DMAC_TRANSFER_EVENT_NONE,
+
+    /* Half Data is transferred */
+    DMAC_TRANSFER_EVENT_HALF_COMPLETE
 
 } DMAC_TRANSFER_EVENT;
+
+// *****************************************************************************
+/* DMA Data Pattern Size
+
+  Summary:
+    Identifies the pattern size for data matching
+
+  Description:
+    This data type Identifies size of pattern data which will be matched with
+    transmitted data.
+
+  Remarks:
+    None.
+*/
+typedef enum
+{ 
+  /* pattern size is of 1 byte */
+  DMAC_DATA_PATTERN_SIZE_1_BYTE,
+
+  /* pattern size is of 2 bytes */
+  DMAC_DATA_PATTERN_SIZE_2_BYTE
+
+} DMAC_DATA_PATTERN_SIZE;
 
 typedef void (*DMAC_CHANNEL_CALLBACK) (DMAC_TRANSFER_EVENT status, uintptr_t contextHandle);
 
@@ -285,6 +311,10 @@ void DMAC_ChannelCallbackRegister(DMAC_CHANNEL channel, const DMAC_CHANNEL_CALLB
 */
 bool DMAC_ChannelTransfer( DMAC_CHANNEL channel, const void *srcAddr, size_t srcSize, const void *destAddr, size_t destSize, size_t cellSize);
 
+bool DMAC_ChainTransferSetup( DMAC_CHANNEL channel, const void *srcAddr, size_t srcSize, const void *destAddr, size_t destSize, size_t cellSize);
+
+void DMAC_ChannelPatternMatchSetup(DMAC_CHANNEL channel, DMAC_DATA_PATTERN_SIZE patternSize, uint16_t patternMatchData);
+void DMAC_ChannelPatternMatchDisable(DMAC_CHANNEL channel);
 // *****************************************************************************
 /* Function:
    void DMAC_ChannelDisable (DMAC_CHANNEL channel)
