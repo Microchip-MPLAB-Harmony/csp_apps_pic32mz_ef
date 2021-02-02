@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MZ EF family
-title: EBI SRAM read write 
+title: EBI SRAM read write
 has_children: false
 has_toc: false
 ---
@@ -56,5 +56,5 @@ Following table provides the LED name:
 
 | Board | LED name |
 | ----- | -------- |
-| [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007) | LED1|
+| [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007) | LED3|
 |||
