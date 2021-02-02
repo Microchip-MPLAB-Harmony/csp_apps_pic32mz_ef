@@ -367,7 +367,7 @@ bool DMAC_ChannelIsBusy (DMAC_CHANNEL channel);
 
 // *****************************************************************************
 /* Function:
-   void DMAC_ChannelCRCEnable
+   void DMAC_ChannelCRCSetup
 
   Summary:
     DMA Channel CRC setup and enable function
@@ -409,12 +409,12 @@ bool DMAC_ChannelIsBusy (DMAC_CHANNEL channel);
     crcSetup.reverse_crc_output = true;
     crcSetup.final_xor_value    = 0xFFFFFFFF;
 
-    DMAC_ChannelCRCEnable(DMAC_CHANNEL_0, crcSetup);
+    DMAC_ChannelCRCSetup(DMAC_CHANNEL_0, crcSetup);
 
     DMAC_ChannelTransfer(DMAC_CHANNEL_0, &srcBuffer, 13, &dstBuffer, 13, 13);
     </code>
 */
-void DMAC_ChannelCRCEnable( DMAC_CHANNEL channel, DMAC_CRC_SETUP CRCSetup );
+void DMAC_ChannelCRCSetup( DMAC_CHANNEL channel, DMAC_CRC_SETUP CRCSetup );
 
 // *****************************************************************************
 /* Function:
@@ -448,9 +448,9 @@ void DMAC_CRCDisable( void );
 
   Description:
     Reads the generated DMA CRC value. It performs crc reverse and final xor
-    opeartion based on setup paramters during DMAC_ChannelCRCEnable()
+    opeartion based on setup paramters during DMAC_ChannelCRCSetup()
 
-    Note: Once Read is done, DMAC_ChannelCRCEnable() has to be called
+    Note: Once Read is done, DMAC_ChannelCRCSetup() has to be called
     again to setup the seed before performing DMA transfer for CRC generation.
 
   Parameters:
@@ -472,7 +472,7 @@ void DMAC_CRCDisable( void );
     crcSetup.reverse_crc_output = true;
     crcSetup.final_xor_value    = 0xFFFFFFFF;
 
-    DMAC_ChannelCRCEnable(DMAC_CHANNEL_0, crcSetup);
+    DMAC_ChannelCRCSetup(DMAC_CHANNEL_0, crcSetup);
 
     DMAC_ChannelTransfer(...);
 
