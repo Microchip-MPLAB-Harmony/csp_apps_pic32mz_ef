@@ -48,13 +48,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8D21C46ECAA0545626913475F45C540A
-- generatedChecksum: 359D538BEAA9AE59BE602B48FE1D851B
+- generatedChecksum: 9DB9EC3970B22882794C716BF74ADD21
   logicalPath: config\pic32mz_ef_sk\peripheral\power
   name: plib_power.c
   physicalPath: peripheral\power
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 359D538BEAA9AE59BE602B48FE1D851B
+  userChecksum: 9DB9EC3970B22882794C716BF74ADD21
 - generatedChecksum: 3395BC7859A61CF74BB26386EF635C14
   logicalPath: config\pic32mz_ef_sk\peripheral\rcon
   name: plib_rcon.c
@@ -174,13 +174,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
-- generatedChecksum: C28E11AB7E036CF8F895B28BE0902893
+- generatedChecksum: 0874C33222DE6210BE6D505E600ED93F
   logicalPath: config\pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: C28E11AB7E036CF8F895B28BE0902893
+  userChecksum: 0874C33222DE6210BE6D505E600ED93F
 format_version: v1.0
 libraries: []
 settings:

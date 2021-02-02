@@ -84,6 +84,7 @@ typedef enum {
 // *****************************************************************************
 
 void POWER_LowPowerModeEnter( POWER_LOW_POWER_MODE mode );
+
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 

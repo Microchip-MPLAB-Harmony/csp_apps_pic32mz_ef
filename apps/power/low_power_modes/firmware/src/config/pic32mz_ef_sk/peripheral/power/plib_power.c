@@ -59,8 +59,8 @@
 // *****************************************************************************
 void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
 {
-    /* Unlock OSCCON register, select low power mode and lock it back */
-    SYSKEY = 0x0;
+    /* Unlock system */
+    SYSKEY = 0x00000000;
     SYSKEY = 0xAA996655;
     SYSKEY = 0x556699AA;
 

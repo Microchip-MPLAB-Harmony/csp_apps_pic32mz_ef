@@ -7,26 +7,26 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_ef_sk" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f3" displayName="clk" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+            <logicalFolder name="f2" displayName="evic" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="power" projectFiles="true">
+            <logicalFolder name="f4" displayName="power" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/power/plib_power.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="rcon" projectFiles="true">
+            <logicalFolder name="f5" displayName="rcon" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/rcon/plib_rcon.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f6" displayName="tmr1" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/tmr1/plib_tmr1_common.h</itemPath>
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/tmr1/plib_tmr1.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="uart" projectFiles="true">
+            <logicalFolder name="f7" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/uart/plib_uart2.h</itemPath>
             </logicalFolder>
@@ -37,6 +37,24 @@
           <itemPath>../src/config/pic32mz_ef_sk/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="pic32mz_ef_sk.mhc" projectFiles="true">
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/power.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/project.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/rcon.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/stdio.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/tmr1.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/uart2.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -53,25 +71,25 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_ef_sk" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f3" displayName="clk" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="evic" projectFiles="true">
+            <logicalFolder name="f2" displayName="evic" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/evic/plib_evic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="power" projectFiles="true">
+            <logicalFolder name="f4" displayName="power" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/power/plib_power.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="rcon" projectFiles="true">
+            <logicalFolder name="f5" displayName="rcon" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/rcon/plib_rcon.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f6" displayName="tmr1" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/tmr1/plib_tmr1.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="uart" projectFiles="true">
+            <logicalFolder name="f7" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mz_ef_sk/peripheral/uart/plib_uart2.c</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -84,24 +102,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1" displayName="pic32mz_ef_sk.mhc" projectFiles="true">
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/power.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/project.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/rcon.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/stdio.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/tmr1.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/uart2.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
