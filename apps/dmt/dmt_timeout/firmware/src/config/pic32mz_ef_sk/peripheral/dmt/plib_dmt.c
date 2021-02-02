@@ -61,12 +61,6 @@ void DMT_Enable( void )
     DMTCONbits.ON = 1;
 }
 
-void DMT_Disable( void )
-{
-    /* ON = 0 */
-    DMTCONbits.ON = 0;
-}
-
 void DMT_Clear( void )
 {
     /* Clear STEP1 */
