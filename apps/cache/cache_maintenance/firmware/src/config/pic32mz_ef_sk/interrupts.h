@@ -1,22 +1,22 @@
 /*******************************************************************************
-  UART2 PLIB
+ System Interrupts File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_uart2.h
+    interrupt.h
 
   Summary:
-    UART2 PLIB Header File
+    Interrupt vectors mapping
 
   Description:
-    None
+    This file contains declarations of device vectors used by Harmony 3
+ *******************************************************************************/
 
-*******************************************************************************/
-
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -36,69 +36,26 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
+ *******************************************************************************/
+// DOM-IGNORE-END
 
-#ifndef PLIB_UART2_H
-#define PLIB_UART2_H
+#ifndef INTERRUPTS_H
+#define INTERRUPTS_H
 
-#include <stddef.h>
-#include <stdbool.h>
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
 #include <stdint.h>
-#include "device.h"
-#include "plib_uart_common.h"
 
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    extern "C" {
-
-#endif
-// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interface
+// Section: Handler Routines
 // *****************************************************************************
 // *****************************************************************************
 
-#define UART2_FrequencyGet()    (uint32_t)(100000000UL)
 
-/****************************** UART2 API *********************************/
 
-void UART2_Initialize( void );
-
-bool UART2_SerialSetup( UART_SERIAL_SETUP *setup, uint32_t srcClkFreq );
-
-bool UART2_AutoBaudQuery( void );
-
-void UART2_AutoBaudSet( bool enable );
-
-bool UART2_Write( void *buffer, const size_t size );
-
-bool UART2_Read( void *buffer, const size_t size );
-
-UART_ERROR UART2_ErrorGet( void );
-
-bool UART2_ReadIsBusy( void );
-
-size_t UART2_ReadCountGet( void );
-
-bool UART2_ReadAbort(void);
-
-bool UART2_WriteIsBusy( void );
-
-size_t UART2_WriteCountGet( void );
-
-void UART2_WriteCallbackRegister( UART_CALLBACK callback, uintptr_t context );
-
-void UART2_ReadCallbackRegister( UART_CALLBACK callback, uintptr_t context );
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    }
-
-#endif
-// DOM-IGNORE-END
-
-#endif // PLIB_UART2_H
+#endif // INTERRUPTS_H
