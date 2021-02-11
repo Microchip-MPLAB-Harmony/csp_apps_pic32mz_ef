@@ -48,7 +48,7 @@ The following table shows the target hardware for the application projects.
 ### Setting up [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007)
 
 - Use a jumper wire to short pin 19 and pin 21 of the J12 connector
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the Debug USB port on the board to the computer using a mini USB cable
 
 ## Running the Application
 

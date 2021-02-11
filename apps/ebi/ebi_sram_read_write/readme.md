@@ -44,7 +44,7 @@ The following table shows the target hardware for the application projects.
   -[Multimedia Expansion Board II](https://www.microchip.com/Developmenttools/ProductDetails/DM320005-2)
 
 - Mount [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007) on a [Multimedia Expansion Board II](https://www.microchip.com/Developmenttools/ProductDetails/DM320005-2)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the Debug USB port on the board to the computer using a mini USB cable
 
 ## Running the Application
 

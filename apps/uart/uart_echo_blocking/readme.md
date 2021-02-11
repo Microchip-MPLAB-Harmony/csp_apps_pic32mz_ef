@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MZ EF family
-title: UART echo blocking 
+title: UART echo blocking
 has_children: false
 has_toc: false
 ---
@@ -40,7 +40,6 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320007)
 
-- Connect the Debug USB port on the board to the computer using a micro USB cable
 - Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer
 
 ## Running the Application
