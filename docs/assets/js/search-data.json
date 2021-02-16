@@ -61,7 +61,7 @@
   },"10": {
     "doc": "Cache maintenance operations",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/cache/cache_maintenance/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/cache/cache_maintenance/readme.html#setting-up-the-hardware"
   },"11": {
@@ -169,7 +169,7 @@
   },"28": {
     "doc": "Clock configuration",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect an oscilloscope to monitor the PORT pin PA14 (Pin number #7 on the J12 connector) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect an oscilloscope to monitor the PORT pin PA14 (Pin number #7 on the J12 connector) | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/clock/clock_config/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/clock/clock_config/readme.html#setting-up-the-hardware"
   },"29": {
@@ -241,7 +241,7 @@
   },"40": {
     "doc": "CORETIMER periodic interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/coretimer/coretimer_periodic_timeout/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/coretimer/coretimer_periodic_timeout/readme.html#setting-up-the-hardware"
   },"41": {
@@ -257,783 +257,975 @@
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/coretimer/coretimer_periodic_timeout/readme.html",
     "relUrl": "/apps/coretimer/coretimer_periodic_timeout/readme.html"
   },"43": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "DMAC CRC-32 Generation",
+    "content": "This example application demonstrates how to use the DMAC peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC). ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html#dmac-crc-32-generation",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html#dmac-crc-32-generation"
+  },"44": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "Description",
+    "content": "The DMAC unit provides support for calculating a CRC-16 and CRC-32 value for data passing through any DMA channel. This example application computes the 32-bit CRC value for the poynomial (0x04C11DB7) using the CRC engine in DMAC peripheral. It uses a DMA Channel with software trigger to initiate a memory-memory transfer from the source buffer to the destination buffer with 8-bit beat size. Once the transfer is completed a 32-bit CRC will be generated for the source buffer. Once the hardware CRC is generated using a DMA Channel it is validated using a software-calculated CRC value. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html#description",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html#description"
+  },"45": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/dmac/dmac_crc32_generate/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html#downloading-and-building-the-application"
+  },"46": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html#setting-up-the-hardware"
+  },"47": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "Running the Application",
+    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Following message is output on console: . | Expected CRC Value for the polynomial (0x04C11DB7) is (0xcbf43926) | . | The LED indicates the success or failure: . | LED is turned ON when the DMAC memory transfer is successful and hardware CRC value matches with the software calculated CRC value | . | . Following table provides LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html#running-the-application",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html#running-the-application"
+  },"48": {
+    "doc": "DMAC CRC-32 Generation",
+    "title": "DMAC CRC-32 Generation",
+    "content": ". ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html",
+    "relUrl": "/apps/dmac/dmac_crc32_generate/readme.html"
+  },"49": {
     "doc": "DMAC memory transfer",
     "title": "DMAC memory transfer",
     "content": "This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html#dmac-memory-transfer",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html#dmac-memory-transfer"
-  },"44": {
+  },"50": {
     "doc": "DMAC memory transfer",
     "title": "Description",
     "content": "The application uses a software trigger to initiate a memory-memory transfer from the source buffer to the destination buffer with 16-bit beat size and 32-bit beat size. Transfer status is reported on console. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html#description",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html#description"
-  },"45": {
+  },"51": {
     "doc": "DMAC memory transfer",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/dmac/dmac_memory_transfer/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html#downloading-and-building-the-application"
-  },"46": {
+  },"52": {
     "doc": "DMAC memory transfer",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html#setting-up-the-hardware"
-  },"47": {
+  },"53": {
     "doc": "DMAC memory transfer",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Following message is output on console: . | The LED indicates the success or failure: . | The LED is turned ON when the DMAC memory transfer is successful | . | . Following table provides LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html#running-the-application",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html#running-the-application"
-  },"48": {
+  },"54": {
     "doc": "DMAC memory transfer",
     "title": "DMAC memory transfer",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html",
     "relUrl": "/apps/dmac/dmac_memory_transfer/readme.html"
-  },"49": {
+  },"55": {
     "doc": "DMAC usart echo",
     "title": "DMAC usart echo",
     "content": "This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html#dmac-usart-echo",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html#dmac-usart-echo"
-  },"50": {
+  },"56": {
     "doc": "DMAC usart echo",
     "title": "Description",
     "content": "This application demonstrates USART transfer with DMA using SERCOM peripheral configured in USART mode. One DMA channel is used to receive 10 bytes of data from the USART and another DMA channel is used to echo back the received bytes. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html#description",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html#description"
-  },"51": {
+  },"57": {
     "doc": "DMAC usart echo",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/dmac/dmac_usart_echo/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html#downloading-and-building-the-application"
-  },"52": {
+  },"58": {
     "doc": "DMAC usart echo",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html#setting-up-the-hardware"
-  },"53": {
+  },"59": {
     "doc": "DMAC usart echo",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Following message is output on console: . | Type 10 characters in the terminal. It will echo back the received bytes and toggles the LED | . The following table provides the LED name: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html#running-the-application",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html#running-the-application"
-  },"54": {
+  },"60": {
     "doc": "DMAC usart echo",
     "title": "DMAC usart echo",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html",
     "relUrl": "/apps/dmac/dmac_usart_echo/readme.html"
-  },"55": {
+  },"61": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "DMAC usart echo using Pattern Matching",
+    "content": "This example application demonstrates USART echo using DMA pattern matching feature. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html#dmac-usart-echo-using-pattern-matching",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html#dmac-usart-echo-using-pattern-matching"
+  },"62": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "Description",
+    "content": "This application demonstrates USART transfer with DMA in pattern matching mode. DMA transmit and receive continously happen until a given pattern is matched. During receive, when pattern is matched, reception stops. similarly during transmit, when buffer matches the pattern, transmission stops. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html#description",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html#description"
+  },"63": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/dmac/dmac_usart_pattern_matching/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html#downloading-and-building-the-application"
+  },"64": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html#setting-up-the-hardware"
+  },"65": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "Running the Application",
+    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Following message is output on console: . | Type less than 10 characters in the terminal followed by “Enter” key. Typed characters will be echoed back and LED toggles. | . The following table provides the LED name: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED3 | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html#running-the-application",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html#running-the-application"
+  },"66": {
+    "doc": "DMAC usart echo using Pattern Matching",
+    "title": "DMAC usart echo using Pattern Matching",
+    "content": ". ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html",
+    "relUrl": "/apps/dmac/dmac_usart_pattern_matching/readme.html"
+  },"67": {
     "doc": "DMT timeout",
     "title": "DMT timeout",
     "content": "This example application shows how the deadman timer resets by not clearing the deadman timer counter on switch press. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html#dmt-timeout",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html#dmt-timeout"
-  },"56": {
+  },"68": {
     "doc": "DMT timeout",
     "title": "Description",
     "content": "This example application shows, how DMT PLIB resets the device by not clearing the Deadman timer counter on every user switch press. This application sets up the DMT to reset the device after DMT counter overflows. This application also sets up the CoreTimer to blink an LED and to clear DMT counter before device reset happens. When user presses the switch, it forces the device to wait an infinite loop to emulate a deadlock condition. As a result, it will triggers the deadman counter overflows the bounded value and device will reset due to this deadman timeout. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html#description",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html#description"
-  },"57": {
+  },"69": {
     "doc": "DMT timeout",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/dmt/dmt_timeout/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html#downloading-and-building-the-application"
-  },"58": {
+  },"70": {
     "doc": "DMT timeout",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html#setting-up-the-hardware"
-  },"59": {
+  },"71": {
     "doc": "DMT timeout",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Console displays the following message: . | The deadman timer is fed periodically using Core Timer (CoreTimer) to prevent the DMT reset and the LED is toggled | Press the switch to put the system in deadlock (LED should stop blinking) | Following table provides switch and LED name . | Board | Switch name | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | SW1 | LED1 | . |   |   |   | . | Console displays the following message: . | The DMT will reset the device with in 12 seconds and the demonstration should restart | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html#running-the-application",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html#running-the-application"
-  },"60": {
+  },"72": {
     "doc": "DMT timeout",
     "title": "DMT timeout",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html",
     "relUrl": "/apps/dmt/dmt_timeout/readme.html"
-  },"61": {
+  },"73": {
     "doc": "EBI SRAM read write",
     "title": "EBI SRAM read write",
     "content": "This example application demonstrates how to use the EBI peripheral to write and read from the SRAM. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html#ebi-sram-read-write",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html#ebi-sram-read-write"
-  },"62": {
+  },"74": {
     "doc": "EBI SRAM read write",
     "title": "Description",
     "content": "This example uses the EBI peripheral library to write an address of memory locations into respective their memory locations and verify the value written by reading the values back and comparing it to the value written. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html#description",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html#description"
-  },"63": {
+  },"75": {
     "doc": "EBI SRAM read write",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/ebi/ebi_sram_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html#downloading-and-building-the-application"
-  },"64": {
+  },"76": {
     "doc": "EBI SRAM read write",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | To run the demo, the following additional hardware are required: -Multimedia Expansion Board II . | Mount PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit on a Multimedia Expansion Board II | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | To run the demo, the following additional hardware are required: -Multimedia Expansion Board II . | Mount PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit on a Multimedia Expansion Board II | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html#setting-up-the-hardware"
-  },"65": {
+  },"77": {
     "doc": "EBI SRAM read write",
     "title": "Running the Application",
-    "content": ". | Build and program the application project using its respective IDE | LED indicates the success: . | LED is turned ON when the value read from the SRAM matched with the written value | . | . Following table provides the LED name: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
+    "content": ". | Build and program the application project using its respective IDE | LED indicates the success: . | LED is turned ON when the value read from the SRAM matched with the written value | . | . Following table provides the LED name: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED3 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html#running-the-application",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html#running-the-application"
-  },"66": {
+  },"78": {
     "doc": "EBI SRAM read write",
     "title": "EBI SRAM read write",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html",
     "relUrl": "/apps/ebi/ebi_sram_read_write/readme.html"
-  },"67": {
+  },"79": {
     "doc": "GPIO interrupt",
     "title": "GPIO interrupt",
     "content": "This example application demonstrate how to generate GPIO interrupt on switch press and release, and indicate the switch status using the LED. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html#gpio-interrupt",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html#gpio-interrupt"
-  },"68": {
+  },"80": {
     "doc": "GPIO interrupt",
     "title": "Description",
     "content": "This application uses the GPIO Peripheral library to generate callback on switch press and release, and drives the GPIO pin connected to the LED to indicate the switch status. The LED is turned ON when the switch is pressed and turned OFF when the switch is released. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html#description",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html#description"
-  },"69": {
+  },"81": {
     "doc": "GPIO interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/gpio/gpio_led_on_off_interrupt/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html#downloading-and-building-the-application"
-  },"70": {
+  },"82": {
     "doc": "GPIO interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html#setting-up-the-hardware"
-  },"71": {
+  },"83": {
     "doc": "GPIO interrupt",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its IDE | The LED is turned ON when the switch is pressed and turned OFF when the switch is released | . The following table provides the switch and the LED name: . | Board | Switch name | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | SW1 | LED1 | . |   |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html#running-the-application",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html#running-the-application"
-  },"72": {
+  },"84": {
     "doc": "GPIO interrupt",
     "title": "GPIO interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html",
     "relUrl": "/apps/gpio/gpio_led_on_off_interrupt/readme.html"
-  },"73": {
+  },"85": {
     "doc": "GPIO Polling",
     "title": "GPIO Polling",
     "content": "This example application demonstrate how to poll the switch input, and indicate the switch status using the LED. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html#gpio-polling",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html#gpio-polling"
-  },"74": {
+  },"86": {
     "doc": "GPIO Polling",
     "title": "Description",
     "content": "This application uses the GPIO Peripheral library to read the GPIO pin connected to the switch, and drives the GPIO pin connected to the LED to indicate the switch status. The LED is turned ON when the switch is pressed and turned OFF when the switch is released. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html#description",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html#description"
-  },"75": {
+  },"87": {
     "doc": "GPIO Polling",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/gpio/gpio_led_on_off_polling/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html#downloading-and-building-the-application"
-  },"76": {
+  },"88": {
     "doc": "GPIO Polling",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html#setting-up-the-hardware"
-  },"77": {
+  },"89": {
     "doc": "GPIO Polling",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its IDE | The LED is turned ON when the switch is pressed and turned OFF when the switch is released | . The following table provides the switch and the LED name: . | Board | Switch name | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | SW1 | LED1 | . |   |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html#running-the-application",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html#running-the-application"
-  },"78": {
+  },"90": {
     "doc": "GPIO Polling",
     "title": "GPIO Polling",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html",
     "relUrl": "/apps/gpio/gpio_led_on_off_polling/readme.html"
-  },"79": {
+  },"91": {
     "doc": "ICAP capture mode",
     "title": "ICAP capture mode",
     "content": "This example application shows how to use the ICAP peripheral to measure the pulse width of the input signal. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html#icap-capture-mode",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html#icap-capture-mode"
-  },"80": {
+  },"92": {
     "doc": "ICAP capture mode",
     "title": "Description",
     "content": "In this application, a pulse signal is generated using the OCMP peripheral and is fed to the ICAP input. ICAP peripheral captures the time at every edge and displays the pulse width on the serial terminal. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html#description",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html#description"
-  },"81": {
+  },"93": {
     "doc": "ICAP capture mode",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/icap/icap_capture_mode/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html#downloading-and-building-the-application"
-  },"82": {
+  },"94": {
     "doc": "ICAP capture mode",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the OC3 pin RA14 (Pin 7 of the J12) to the IC1 pin RD1 (pin 23 of the J12) | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the OC3 pin RA14 (Pin 7 of the J12) to the IC1 pin RD1 (pin 23 of the J12) | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html#setting-up-the-hardware"
-  },"83": {
+  },"95": {
     "doc": "ICAP capture mode",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Console displays the captured pulse width as shown below: . | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html#running-the-application",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html#running-the-application"
-  },"84": {
+  },"96": {
     "doc": "ICAP capture mode",
     "title": "ICAP capture mode",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html",
     "relUrl": "/apps/icap/icap_capture_mode/readme.html"
-  },"85": {
+  },"97": {
     "doc": "NVM flash read write",
     "title": "NVM flash read write",
     "content": "This example application demonstrates how to use the NVM to erase and program the internal Flash memory. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html#nvm-flash-read-write",
     "relUrl": "/apps/nvm/flash_read_write/readme.html#nvm-flash-read-write"
-  },"86": {
+  },"98": {
     "doc": "NVM flash read write",
     "title": "Description",
     "content": "This example uses the NVM peripheral library to erase a page and write an array of values to the internal Flash memory. It verifies the value written by reading the values back and comparing it to the value written. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html#description",
     "relUrl": "/apps/nvm/flash_read_write/readme.html#description"
-  },"87": {
+  },"99": {
     "doc": "NVM flash read write",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/nvm/flash_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/nvm/flash_read_write/readme.html#downloading-and-building-the-application"
-  },"88": {
+  },"100": {
     "doc": "NVM flash read write",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/nvm/flash_read_write/readme.html#setting-up-the-hardware"
-  },"89": {
+  },"101": {
     "doc": "NVM flash read write",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its respective IDE | LED indicates the success or failure: . | LED is turned ON when the value read from the Flash matched with the written value | . | . Following table provides the LED name: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html#running-the-application",
     "relUrl": "/apps/nvm/flash_read_write/readme.html#running-the-application"
-  },"90": {
+  },"102": {
     "doc": "NVM flash read write",
     "title": "NVM flash read write",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html",
     "relUrl": "/apps/nvm/flash_read_write/readme.html"
-  },"91": {
+  },"103": {
     "doc": "OCMP compare mode",
     "title": "OCMP compare mode",
     "content": "This example application shows how to use the OCMP peripheral to generate an active low, active high, and toggle output on compare match. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html#ocmp-compare-mode",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html#ocmp-compare-mode"
-  },"92": {
+  },"104": {
     "doc": "OCMP compare mode",
     "title": "Description",
     "content": "In this application, three OCMP modules are used to generate waveforms. Active Low Output: By default output is set as high and it is set as low on the compare match . Active High Output: By default output is set as low and it is set as high on the compare match . Toggled Output: Compare match toggles the output . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html#description",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html#description"
-  },"93": {
+  },"105": {
     "doc": "OCMP compare mode",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/ocmp/ocmp_compare_mode/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html#downloading-and-building-the-application"
-  },"94": {
+  },"106": {
     "doc": "OCMP compare mode",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html#setting-up-the-hardware"
-  },"95": {
+  },"107": {
     "doc": "OCMP compare mode",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its IDE | Observe active low, active high and toggle output on the oscilloscope . | Refer the following table for pin details: . | OCMP output | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit pins | . | OC1 output | RD0 (Pin 11 of J12) | . | OC2 output | RD1 (Pin 23 of J12) | . | OC3 output | RD10 (Pin 37 of J12) | . |   |   | . | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html#running-the-application",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html#running-the-application"
-  },"96": {
+  },"108": {
     "doc": "OCMP compare mode",
     "title": "OCMP compare mode",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html",
     "relUrl": "/apps/ocmp/ocmp_compare_mode/readme.html"
-  },"97": {
+  },"109": {
+    "doc": "Low Power Modes",
+    "title": "Low Power Modes",
+    "content": "This example application demonstrates how to use different low power modes of the device. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html#low-power-modes",
+    "relUrl": "/apps/power/low_power_modes/readme.html#low-power-modes"
+  },"110": {
+    "doc": "Low Power Modes",
+    "title": "Description",
+    "content": "This example application demonstrates how to use different low power modes of the device. It allows user to put the device in Idle or Sleep mode. Further, device can be woken up from these low power modes upon switch press. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html#description",
+    "relUrl": "/apps/power/low_power_modes/readme.html#description"
+  },"111": {
+    "doc": "Low Power Modes",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/power/low_power_modes/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/power/low_power_modes/readme.html#downloading-and-building-the-application"
+  },"112": {
+    "doc": "Low Power Modes",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/power/low_power_modes/readme.html#setting-up-the-hardware"
+  },"113": {
+    "doc": "Low Power Modes",
+    "title": "Running the Application",
+    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | See the following message in the console: . | LED should be continously blinking | Follow the instructions on console to verify different low power modes | . Following table provides the LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED3 | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html#running-the-application",
+    "relUrl": "/apps/power/low_power_modes/readme.html#running-the-application"
+  },"114": {
+    "doc": "Low Power Modes",
+    "title": "Low Power Modes",
+    "content": ". ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html",
+    "relUrl": "/apps/power/low_power_modes/readme.html"
+  },"115": {
     "doc": "RNG random number",
     "title": "RNG random number",
     "content": "This example application shows how to use the RNG Peripheral library to generate a pseudo-random number. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html#rng-random-number",
     "relUrl": "/apps/rng/rng_random_number/readme.html#rng-random-number"
-  },"98": {
+  },"116": {
     "doc": "RNG random number",
     "title": "Description",
     "content": "The RNG peripheral has two blocks. One of them is called True Random Number Generator (TRNG) and the other is called Pseudo-Random Number Generator (PRNG). The TRNG generates true random numbers that can be used as seed for the PRNG. The PRNG can generate random numbers of up to 64-bits of length. This application shows how to generate a 64-bit pseudo-random number with the help of PRNG and TRNG. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html#description",
     "relUrl": "/apps/rng/rng_random_number/readme.html#description"
-  },"99": {
+  },"117": {
     "doc": "RNG random number",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rng/rng_random_number/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rng/rng_random_number/readme.html#downloading-and-building-the-application"
-  },"100": {
+  },"118": {
     "doc": "RNG random number",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rng/rng_random_number/readme.html#setting-up-the-hardware"
-  },"101": {
+  },"119": {
     "doc": "RNG random number",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Press the switch to generate a 64-bit pseudo-random number (Refer to the table below for switch details) . | Board | Switch name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | SW1 | . |   |   | . | Observe the following output in the console: . | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html#running-the-application",
     "relUrl": "/apps/rng/rng_random_number/readme.html#running-the-application"
-  },"102": {
+  },"120": {
     "doc": "RNG random number",
     "title": "RNG random number",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html",
     "relUrl": "/apps/rng/rng_random_number/readme.html"
-  },"103": {
+  },"121": {
     "doc": "RTCC alarm interrupt",
     "title": "RTCC alarm interrupt",
     "content": "This example application shows how to use the RTCC to configure the time and generate the alarm. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html#rtcc-alarm-interrupt",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html#rtcc-alarm-interrupt"
-  },"104": {
+  },"122": {
     "doc": "RTCC alarm interrupt",
     "title": "Description",
     "content": "This example application shows how to setup RTCC time and configure alarm using the RTCC Peripheral Library. The application sets up an alarm to be generated every day at a specified time. A message is sent via the Virtual COM port on the alarm trigger. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html#description",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html#description"
-  },"105": {
+  },"123": {
     "doc": "RTCC alarm interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rtcc/rtcc_alarm/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html#downloading-and-building-the-application"
-  },"106": {
+  },"124": {
     "doc": "RTCC alarm interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html#setting-up-the-hardware"
-  },"107": {
+  },"125": {
     "doc": "RTCC alarm interrupt",
     "title": "Running the Application",
-    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Console output will be as given below, after the alarm is triggered: . | . ",
+    "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Console output will be as given below in the beginning: | Once alarm triggers, following will be console output: . | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html#running-the-application",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html#running-the-application"
-  },"108": {
+  },"126": {
     "doc": "RTCC alarm interrupt",
     "title": "RTCC alarm interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html",
     "relUrl": "/apps/rtcc/rtcc_alarm/readme.html"
-  },"109": {
+  },"127": {
+    "doc": "SPI ping pong with DMA",
+    "title": "SPI ping pong with DMA",
+    "content": "This example demonstrates how to continuously transmit and receive data over a SPI interface using contiguous ping pong buffers with DMA. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html#spi-ping-pong-with-dma",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html#spi-ping-pong-with-dma"
+  },"128": {
+    "doc": "SPI ping pong with DMA",
+    "title": "Description",
+    "content": "The DMA peripheral provides support to implement the ping-pong buffering (the DMA transmits and receives data from one pair of buffers, when the CPU works on the second pair) in two ways. In one method, source half empty interrupt and/or destination half full interrupt can be used to notify the application when half of the transfer is complete. At that point CPU can use first half of the buffer (ping buffer). When DMA is transfering first half of the buffer, CPU can use 2nd half of the buffer (pong buffer) for processing. DMA auto enable feature is used to ensure data transfer resumes from beginning after completion. In this method, ping-pong buffer has to be in contiguous memory location. In second method, two DMA channels are used in chained fashion. One DMA channel can trigger another one when its transfer is complete and vice-versa. In this method, ping-pong buffer need not be in contiguous memory location. This application uses the first method. It transmits an array of values and verifies the value transmitted by receiving the values back with loop back and comparing it to the value transmitted. It repeats the same for two halfs of the buffer. This application requires that the MOSI output pin to be connected to the MISO input pin so that anything transmitted will also be received. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html#description",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html#description"
+  },"129": {
+    "doc": "SPI ping pong with DMA",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/spi/spi_ping_pong_with_dma/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html#downloading-and-building-the-application"
+  },"130": {
+    "doc": "SPI ping pong with DMA",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 19 and pin 21 of the J12 connector | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html#setting-up-the-hardware"
+  },"131": {
+    "doc": "SPI ping pong with DMA",
+    "title": "Running the Application",
+    "content": ". | Build and program the application using its IDE | LED indicates the success or failure: . | Green LED (LED3) is turned ON when the value received in both the buffers match with the transmitted value | Red LED (LED1) is turned ON when the value received did not match with the transmitted value in at least one buffer | . | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html#running-the-application",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html#running-the-application"
+  },"132": {
+    "doc": "SPI ping pong with DMA",
+    "title": "SPI ping pong with DMA",
+    "content": ". ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma/readme.html"
+  },"133": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "SPI ping pong with DMA Chaining",
+    "content": "This example demonstrates how to continuously transmit and receive data over a SPI interface using ping pong buffers with DMA in chain mode. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html#spi-ping-pong-with-dma-chaining",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html#spi-ping-pong-with-dma-chaining"
+  },"134": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "Description",
+    "content": "The DMA peripheral provides support to implement the ping-pong buffering (the DMA transmits and receives data from one pair of buffers, when the CPU works on the second pair) in two ways. In one method, source half empty interrupt and/or destination half full interrupt can be used to notify the application when half of the transfer is complete. At that point CPU can use first half of the buffer (ping buffer). When DMA is transfering first half of the buffer, CPU can use 2nd half of the buffer (pong buffer) for processing. DMA auto enable feature is used to ensure data transfer resumes from beginning after completion. In this method, ping-pong buffer has to be in contiguous memory location. In second method, two DMA channels are used in chained fashion. One DMA channel can trigger another one when its transfer is complete and vice-versa. In this method, ping-pong buffer need not be in contiguous memory location. This application uses the second method. It transmits an array of values and verifies the value transmitted by receiving the values back with loop back and comparing it to the value transmitted. It repeats the same for two buffers. This application requires that the MOSI output pin to be connected to the MISO input pin so that anything transmitted will also be received. ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html#description",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html#description"
+  },"135": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/spi/spi_ping_pong_with_dma_chain/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html#downloading-and-building-the-application"
+  },"136": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 19 and pin 21 of the J12 connector | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html#setting-up-the-hardware"
+  },"137": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "Running the Application",
+    "content": ". | Build and program the application using its IDE | LED indicates the success or failure: . | Green LED (LED3) is turned ON when the value received in both the buffers match with the transmitted value | Red LED (LED1) is turned ON when the value received did not match with the transmitted value in at least one buffer | . | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html#running-the-application",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html#running-the-application"
+  },"138": {
+    "doc": "SPI ping pong with DMA Chaining",
+    "title": "SPI ping pong with DMA Chaining",
+    "content": ". ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html",
+    "relUrl": "/apps/spi/spi_ping_pong_with_dma_chain/readme.html"
+  },"139": {
     "doc": "SPI blocking",
     "title": "SPI blocking",
     "content": "This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data in a blocking manner. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html#spi-blocking",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html#spi-blocking"
-  },"110": {
+  },"140": {
     "doc": "SPI blocking",
     "title": "Description",
     "content": "This example demonstrates the transmit and receive operation over SPI interface in a blocking manner. The example application transmits known values from an array and verifies the data received through the loop back by comparing the transmitted data and the received data. The example application performs the loop back test only once after a power on reset. After the loop back is complete, the status of the loop back is indicated and the application remains idle. The loop back test requires the MOSI output pin to be connected to the MISO input pin so that anything transmitted will also be received. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html#description",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html#description"
-  },"111": {
+  },"141": {
     "doc": "SPI blocking",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/spi/spi_self_loopback_blocking/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html#downloading-and-building-the-application"
-  },"112": {
+  },"142": {
     "doc": "SPI blocking",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 7 and pin 37 of the J12 connector | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 7 and pin 37 of the J12 connector | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html#setting-up-the-hardware"
-  },"113": {
+  },"143": {
     "doc": "SPI blocking",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | LED indicates the success or failure: . | LED is turned ON when the when the value received matched with the transmitted value | LED is turned OFF when the when the value received did not match with the transmitted value | . | . Following table provides LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html#running-the-application",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html#running-the-application"
-  },"114": {
+  },"144": {
     "doc": "SPI blocking",
     "title": "SPI blocking",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html",
     "relUrl": "/apps/spi/spi_self_loopback_blocking/readme.html"
-  },"115": {
+  },"145": {
     "doc": "SPI interrupt",
     "title": "SPI interrupt",
     "content": "This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data using interrupt. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html#spi-interrupt",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html#spi-interrupt"
-  },"116": {
+  },"146": {
     "doc": "SPI interrupt",
     "title": "Description",
     "content": "This example shows the transmit and receive operation over a SPI interface in a non-blocking manner. The peripheral interrupt is used to manage the transfer.The example application transmits known values from an array and verifies the data received through the loop back by comparing the transmitted data and the received data. The example application performs the loop back test only once after a power on reset. After the loop back is complete, the status of the loop back is indicated and the application remains idle. The loop back test requires the MOSI output pin to be connected to the MISO input pin so that anything transmitted will also be received. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html#description",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html#description"
-  },"117": {
+  },"147": {
     "doc": "SPI interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/spi/spi_self_loopback_interrupt/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html#downloading-and-building-the-application"
-  },"118": {
+  },"148": {
     "doc": "SPI interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 7 and pin 37 of the J12 connector | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Use a jumper wire to short pin 7 and pin 37 of the J12 connector | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html#setting-up-the-hardware"
-  },"119": {
+  },"149": {
     "doc": "SPI interrupt",
     "title": "Running the Application",
     "content": ". | Build and program the application using its IDE | LED indicates the success or failure: . | LED is turned ON when the when the value received matched with the transmitted value | LED is turned OFF when the when the value received did not match with the transmitted value | . | . Following table provides LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html#running-the-application",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html#running-the-application"
-  },"120": {
+  },"150": {
     "doc": "SPI interrupt",
     "title": "SPI interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html",
     "relUrl": "/apps/spi/spi_self_loopback_interrupt/readme.html"
-  },"121": {
+  },"151": {
     "doc": "SQI flash read write",
     "title": "SQI flash read write",
     "content": "This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the SQI Serial Flash memory. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html#sqi-flash-read-write",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html#sqi-flash-read-write"
-  },"122": {
+  },"152": {
     "doc": "SQI flash read write",
     "title": "Description",
     "content": "This example uses the SQI peripheral library to erase and write an array of values to the SQI Serial Flash memory. It verifies the value written by reading the values back and comparing it to the value written. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html#description",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html#description"
-  },"123": {
+  },"153": {
     "doc": "SQI flash read write",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/sqi/sqi_read_write/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html#downloading-and-building-the-application"
-  },"124": {
+  },"154": {
     "doc": "SQI flash read write",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html#setting-up-the-hardware"
-  },"125": {
+  },"155": {
     "doc": "SQI flash read write",
     "title": "Running the Application",
     "content": ". | Build and program the application using the its IDE | Switch LED is turned ON to indicate waiting for switch press | Press the Switch to start the SQI Transfer. Switch LED is turned OFF once switch is pressed | The Success LED is turned ON when the value read from the SQI Serial Flash memory matched with the written value | . Following table provides the LED names and switch name: . | Kit Name | Success LED Name | Switch LED Name | Switch Name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED3 | LED1 | SW3 | . |   |   |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html#running-the-application",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html#running-the-application"
-  },"126": {
+  },"156": {
     "doc": "SQI flash read write",
     "title": "SQI flash read write",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html",
     "relUrl": "/apps/sqi/sqi_read_write/readme.html"
-  },"127": {
+  },"157": {
     "doc": "TMR periodic interrupt",
     "title": "TMR periodic interrupt",
     "content": "This example demonstrates how to use the TMR module in timer mode to generate periodic interrupt. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html#tmr-periodic-interrupt",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html#tmr-periodic-interrupt"
-  },"128": {
+  },"158": {
     "doc": "TMR periodic interrupt",
     "title": "Description",
     "content": "The TMR module generates periodic interrupt on 1 second period match. The LED is toggled in the interrupt handler to indicate periodic callback. Two TMR modules are used to form a 32-bit timer. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html#description",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html#description"
-  },"129": {
+  },"159": {
     "doc": "TMR periodic interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/tmr/tmr_timer_mode/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html#downloading-and-building-the-application"
-  },"130": {
+  },"160": {
     "doc": "TMR periodic interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html#setting-up-the-hardware"
-  },"131": {
+  },"161": {
     "doc": "TMR periodic interrupt",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its IDE | On successful execution, LED starts blinking | . Following table provides the LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html#running-the-application",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html#running-the-application"
-  },"132": {
+  },"162": {
     "doc": "TMR periodic interrupt",
     "title": "TMR periodic interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html",
     "relUrl": "/apps/tmr/tmr_timer_mode/readme.html"
-  },"133": {
+  },"163": {
     "doc": "TMR1 periodic interrupt",
     "title": "TMR1 periodic interrupt",
     "content": "This example demonstrates how to use the TMR1 module in timer mode to generate periodic interrupt. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html#tmr1-periodic-interrupt",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html#tmr1-periodic-interrupt"
-  },"134": {
+  },"164": {
     "doc": "TMR1 periodic interrupt",
     "title": "Description",
     "content": "The TMR1 module generates 100 ms periodic interrupt. The LED is toggled in the interrupt handler to indicate periodic callback. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html#description",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html#description"
-  },"135": {
+  },"165": {
     "doc": "TMR1 periodic interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/tmr1/tmr1_timer_mode/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html#downloading-and-building-the-application"
-  },"136": {
+  },"166": {
     "doc": "TMR1 periodic interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html#setting-up-the-hardware"
-  },"137": {
+  },"167": {
     "doc": "TMR1 periodic interrupt",
     "title": "Running the Application",
     "content": ". | Build and program the application project using its IDE | On successful execution, LED starts blinking | . Following table provides the LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html#running-the-application",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html#running-the-application"
-  },"138": {
+  },"168": {
     "doc": "TMR1 periodic interrupt",
     "title": "TMR1 periodic interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html",
     "relUrl": "/apps/tmr1/tmr1_timer_mode/readme.html"
-  },"139": {
+  },"169": {
     "doc": "UART echo blocking",
     "title": "UART echo blocking",
     "content": "This example application demonstrates how to use the UART peripheral to transfer a block of data in a blocking manner. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html#uart-echo-blocking",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html#uart-echo-blocking"
-  },"140": {
+  },"170": {
     "doc": "UART echo blocking",
     "title": "Description",
     "content": "This example shows the read and write operation over a UART in a blocking manner. The CPU polls the peripheral register continuously to manage the transfer. It receives a line of characters from the terminal window and echoes them back. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html#description",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html#description"
-  },"141": {
+  },"171": {
     "doc": "UART echo blocking",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/uart/uart_echo_blocking/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html#downloading-and-building-the-application"
-  },"142": {
+  },"172": {
     "doc": "UART echo blocking",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html#setting-up-the-hardware"
-  },"143": {
+  },"173": {
     "doc": "UART echo blocking",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | See the following message in the console: . | Type a line of characters and press the Enter key | Entered line will be echoed back and the LED is toggled | . Following table provides the LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html#running-the-application",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html#running-the-application"
-  },"144": {
+  },"174": {
     "doc": "UART echo blocking",
     "title": "UART echo blocking",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html",
     "relUrl": "/apps/uart/uart_echo_blocking/readme.html"
-  },"145": {
+  },"175": {
     "doc": "UART echo interrupt",
     "title": "UART echo interrupt",
     "content": "This example application demonstrates how to use the UART peripheral to transfer a block of data in a non-blocking manner. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html#uart-echo-interrupt",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html#uart-echo-interrupt"
-  },"146": {
+  },"176": {
     "doc": "UART echo interrupt",
     "title": "Description",
     "content": "This example shows the read and write operation over a UART in a non-blocking manner. The peripheral interrupt is used to manage the transfer. It receives 10 characters from the terminal window and echoes them back. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html#description",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html#description"
-  },"147": {
+  },"177": {
     "doc": "UART echo interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/uart/uart_echo_interrupt/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html#downloading-and-building-the-application"
-  },"148": {
+  },"178": {
     "doc": "UART echo interrupt",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html#setting-up-the-hardware"
-  },"149": {
+  },"179": {
     "doc": "UART echo interrupt",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | See the following message in the console: . | Type a line of characters and press the Enter key | Entered line will be echoed back and the LED is toggled | . Following table provides the LED names: . | Board | LED name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | LED1 | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html#running-the-application",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html#running-the-application"
-  },"150": {
+  },"180": {
     "doc": "UART echo interrupt",
     "title": "UART echo interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html",
     "relUrl": "/apps/uart/uart_echo_interrupt/readme.html"
-  },"151": {
+  },"181": {
     "doc": "UART ring buffer",
     "title": "UART ring buffer",
     "content": "This example application demonstrates how to use the UART peripheral in ring buffer mode. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html#uart-ring-buffer",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html#uart-ring-buffer"
-  },"152": {
+  },"182": {
     "doc": "UART ring buffer",
     "title": "Description",
     "content": "This example demonstrates read and write over UART using the ring buffer mode. The UART is configured in non-blocking mode (interrupts enabled). The example asks the user to enter 10 characters. Once received, the characters are echoed back. In the process, the example demonstrates various ring buffer APIs. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html#description",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html#description"
-  },"153": {
+  },"183": {
     "doc": "UART ring buffer",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/uart/uart_ring_buffer_interrupt/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html#downloading-and-building-the-application"
-  },"154": {
+  },"184": {
     "doc": "UART ring buffer",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html#setting-up-the-hardware"
-  },"155": {
+  },"185": {
     "doc": "UART ring buffer",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application using its IDE | The console displays the following message . | Console displays the initial transmit and receive buffer sizes | It then adds 10 characters - “0123456789” to the transmit buffer and displays the available free space in the transmit buffer after the 10 characters have been added | The message asks the user to enter 10 characters | NOTE: For this example, the “Free Space in Transmit Buffer = xx”, where xx can be anything between 117 to 127, depending on the USART baud rate and the CPU execution speed | . | Enter 10 characters on the terminal | Entered characters are echoed back on the console and message is displayed indicating that the receive notification is turned on . | For every 10 characters typed, it will be echoed back on the console . | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html#running-the-application",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html#running-the-application"
-  },"156": {
+  },"186": {
     "doc": "UART ring buffer",
     "title": "UART ring buffer",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html",
     "relUrl": "/apps/uart/uart_ring_buffer_interrupt/readme.html"
-  },"157": {
+  },"187": {
     "doc": "WDT timeout",
     "title": "WDT timeout",
     "content": "This example application shows how the watchdog timer resets by not feeding the watchdog on switch press. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html#wdt-timeout",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html#wdt-timeout"
-  },"158": {
+  },"188": {
     "doc": "WDT timeout",
     "title": "Description",
     "content": "This example application shows how the WDT peripheral library resets the watchdog timer by not feeding the watchdog on switch press. The application sets up the watchdog to reset the device. The application also sets up the timer to blink an LED to emulate a process. A user switch press forces the device to wait in an infinite loop to emulate a deadlock. As a result a device reset is triggered as the watchdog counter overflows the bounded value. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html#description",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html#description"
-  },"159": {
+  },"189": {
     "doc": "WDT timeout",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/wdt/wdt_timeout/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html#downloading-and-building-the-application"
-  },"160": {
+  },"190": {
     "doc": "WDT timeout",
     "title": "Setting up the hardware",
-    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the Debug USB port on the board to the computer using a micro USB cable | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect mini USB cables from the ‘Debug USB’ and ‘USB-to-UART’ connectors on the board to the computer | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html#setting-up-the-hardware"
-  },"161": {
+  },"191": {
     "doc": "WDT timeout",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | LED should be blinking and the console displays the following message . | Press the switch to put the system in a deadlock | LED should stop blinking and the console should print the following message . | WDT will reset the device in four seconds and the demonstration should restart | . Refer the table below for details of switch and LED: . | Board | Switch Name | LED Name | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | SW1 | LED1 | . |   |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html#running-the-application",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html#running-the-application"
-  },"162": {
+  },"192": {
     "doc": "WDT timeout",
     "title": "WDT timeout",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html",
     "relUrl": "/apps/wdt/wdt_timeout/readme.html"
-  },"163": {
+  },"193": {
     "doc": "ADCHS Interrupt",
     "title": "ADCHS Interrupt",
     "content": "This example application shows how to sample an analog input using the ADCHS peripheral and displays the converted samples on a serial terminal. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html#adchs-interrupt",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html#adchs-interrupt"
-  },"164": {
+  },"194": {
     "doc": "ADCHS Interrupt",
     "title": "Description",
     "content": "In this application, an analog input is converted by a hardware trigger generated by the TMR peripheral. Result is read in the conversion complete interrupt handler. Converted digital value is displayed on the serial terminal. ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html#description",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html#description"
-  },"165": {
+  },"195": {
     "doc": "ADCHS Interrupt",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/adchs/adchs_interrupt/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | pic32mz_ef_sk.X | MPLABX project for PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html#downloading-and-building-the-application"
-  },"166": {
+  },"196": {
     "doc": "ADCHS Interrupt",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | pic32mz_ef_sk.X | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | . |   |   | . Setting up PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit . | Connect the AN3 pin RB3 (Pin 15 of the J12) to the Vcc (Pin 1 of the J12) | Connect the COM port J11(USB to UART) to the computer using a mini USB cable | Connect the Debug USB port on the board to the computer using a mini USB cable | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html#setting-up-the-hardware"
-  },"167": {
+  },"197": {
     "doc": "ADCHS Interrupt",
     "title": "Running the Application",
     "content": ". | Open the Terminal application (Ex.:Tera term) on the computer | Connect to the “USB to UART” COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Build and Program the application project using its IDE | Console displays the ADC count and the ADC input voltage | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html#running-the-application",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html#running-the-application"
-  },"168": {
+  },"198": {
     "doc": "ADCHS Interrupt",
     "title": "ADCHS Interrupt",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html",
     "relUrl": "/apps/adchs/adchs_interrupt/readme.html"
-  },"169": {
+  },"199": {
     "doc": "Release notes",
     "title": "Microchip MPLAB® Harmony 3 Release Notes",
     "content": " ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/release_notes.html#microchip-mplab-harmony-3-release-notes",
     "relUrl": "/release_notes.html#microchip-mplab-harmony-3-release-notes"
-  },"170": {
+  },"200": {
+    "doc": "Release notes",
+    "title": "Harmony 3 peripheral library application examples for PIC32MZ EF family  v3.1.0",
+    "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | 33 | . New Features . | None | . Known Issues . | None | . Development Tools . | MPLAB® X IDE v5.45 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.7.0 | . | MPLAB® XC32 C/C++ Compiler v2.50 | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v310",
+    "relUrl": "/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v310"
+  },"201": {
+    "doc": "Release notes",
+    "title": "Harmony 3 peripheral library application examples for PIC32MZ EF family  v3.0.1",
+    "content": "New Features . | Added discover.microchip.com metadata | . Bug fixes . | Same as v3.0.0 | . Known Issues . | Same as v3.0.0 | . Development Tools . | Same as v3.0.0 | . ",
+    "url": "http://localhost:4000/csp_apps_pic32mz_ef/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v301",
+    "relUrl": "/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v301"
+  },"202": {
     "doc": "Release notes",
     "title": "Harmony 3 peripheral library application examples for PIC32MZ EF family  v3.0.0",
     "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | . | PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit | 28 | . New Features . New features added in this release are as follows: . | Applications migrated from csp repository to this new application repository for PIC32MZ EF development boards | . Known Issues . The current known issues are as follows: . | None | . Development Tools . | MPLAB® X IDE v5.40 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.6.0 | . | MPLAB® XC32 C/C++ Compiler v2.41 | . ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v300",
     "relUrl": "/release_notes.html#harmony-3-peripheral-library-application-examples-for-pic32mz-ef-family--v300"
-  },"171": {
+  },"203": {
     "doc": "Release notes",
     "title": "Release notes",
     "content": ". ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/release_notes.html",
     "relUrl": "/release_notes.html"
-  },"172": {
+  },"204": {
     "doc": "Harmony 3 peripheral library application examples for PIC32MZ EF family",
     "title": "Harmony 3 peripheral library application examples for PIC32MZ EF family",
-    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 peripheral library application examples for PIC32MZ EF family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 peripheral library application examples for PIC32MZ EF family - [Release Notes](/csp_apps_pic32mz_ef/release_notes.html) - [MPLAB® Harmony License](/csp_apps_pic32mz_ef/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains peripheral library example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/csp_apps_pic32mz_ef/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [ADCHS Interrupt](/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html) | This example application shows how to sample an analog input using the ADCHS peripheral and displays the converted samples on a serial terminal | [ADCHS polling](/csp_apps_pic32mz_ef/apps/adchs/adchs_polled/readme.html) | This example application shows how to sample an analog input using the ADCHS peripheral and displays the converted samples on a serial terminal | [Cache maintenance operations](/csp_apps_pic32mz_ef/apps/cache/cache_maintenance/readme.html) | This example demonstrates the cache maintenance operation by cleaning and invalidating the cache for the DMA buffers located in the cacheable SRAM region | [CAN blocking](/csp_apps_pic32mz_ef/apps/can/can_normal_operation_blocking/readme.html) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in polling mode | [CAN interrupt](/csp_apps_pic32mz_ef/apps/can/can_normal_operation_interrupt_timestamp/readme.html) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in interrupt mode | [Clock configuration](/csp_apps_pic32mz_ef/apps/clock/clock_config/readme.html) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification | [CMP configurable reference](/csp_apps_pic32mz_ef/apps/cmp/cmp_configurable_reference/readme.html) | This example application shows how to use the CMP Peripheral library to compare voltage level on the negative input with the internal configurable reference voltage | [CORETIMER periodic interrupt](/csp_apps_pic32mz_ef/apps/coretimer/coretimer_periodic_timeout/readme.html) | This example application shows how to use the CoreTimer to generate periodic interrupts | [DMAC memory transfer](/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html) | This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer | [DMAC usart echo](/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html) | This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes | [DMT timeout](/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html) | This example application shows how the deadman timer resets by not clearing the deadman timer counter on switch press | [EBI SRAM read write](/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html) | This example application demonstrates how to use the EBI peripheral to write and read from the SRAM | [GPIO interrupt](/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html) | This example application demonstrate how to generate GPIO interrupt on switch press and release, and indicate the switch status using the LED | [GPIO Polling](/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html) | This example application demonstrate how to poll the switch input, and indicate the switch status using the LED | [ICAP capture mode](/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html) | This example application shows how to use the ICAP peripheral to measure the pulse width of the input signal | [NVM flash read write](/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html) | This example application demonstrates how to use the NVM to erase and program the internal Flash memory | [OCMP compare mode](/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html) | This example application shows how to use the OCMP peripheral to generate an active low, active high, and toggle output on compare match | [RNG random number](/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html) | This example application shows how to use the RNG Peripheral library to generate a pseudo-random number | [RTCC alarm interrupt](/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html) | This example application shows how to use the RTCC to configure the time and generate the alarm | [SPI blocking](/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data in a blocking manner | [SPI interrupt](/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data using interrupt | [SQI flash read write](/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html) | This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the SQI Serial Flash memory | [TMR periodic interrupt](/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html) | This example demonstrates how to use the TMR module in timer mode to generate periodic interrupt | [TMR1 periodic interrupt](/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html) | This example demonstrates how to use the TMR1 module in timer mode to generate periodic interrupt | [UART echo blocking](/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html) | This example application demonstrates how to use the UART peripheral to transfer a block of data in a blocking manner | [UART echo interrupt](/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html) | This example application demonstrates how to use the UART peripheral to transfer a block of data in a non-blocking manner | [UART ring buffer](/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html) | This example application demonstrates how to use the UART peripheral in ring buffer mode | [WDT timeout](/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html) | This example application shows how the watchdog timer resets by not feeding the watchdog on switch press | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg?style=social)]() ",
+    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 peripheral library application examples for PIC32MZ EF family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 peripheral library application examples for PIC32MZ EF family - [Release Notes](/csp_apps_pic32mz_ef/release_notes.html) - [MPLAB® Harmony License](/csp_apps_pic32mz_ef/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains peripheral library example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/csp_apps_pic32mz_ef/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [ADCHS Interrupt](/csp_apps_pic32mz_ef/apps/adchs/adchs_interrupt/readme.html) | This example application shows how to sample an analog input using the ADCHS peripheral and displays the converted samples on a serial terminal | [ADCHS polling](/csp_apps_pic32mz_ef/apps/adchs/adchs_polled/readme.html) | This example application shows how to sample an analog input using the ADCHS peripheral and displays the converted samples on a serial terminal | [Cache maintenance operations](/csp_apps_pic32mz_ef/apps/cache/cache_maintenance/readme.html) | This example demonstrates the cache maintenance operation by cleaning and invalidating the cache for the DMA buffers located in the cacheable SRAM region | [CAN blocking](/csp_apps_pic32mz_ef/apps/can/can_normal_operation_blocking/readme.html) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in polling mode | [CAN interrupt](/csp_apps_pic32mz_ef/apps/can/can_normal_operation_interrupt_timestamp/readme.html) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in interrupt mode | [Clock configuration](/csp_apps_pic32mz_ef/apps/clock/clock_config/readme.html) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification | [CMP configurable reference](/csp_apps_pic32mz_ef/apps/cmp/cmp_configurable_reference/readme.html) | This example application shows how to use the CMP Peripheral library to compare voltage level on the negative input with the internal configurable reference voltage | [CORETIMER periodic interrupt](/csp_apps_pic32mz_ef/apps/coretimer/coretimer_periodic_timeout/readme.html) | This example application shows how to use the CoreTimer to generate periodic interrupts | [DMAC CRC-32 Generation](/csp_apps_pic32mz_ef/apps/dmac/dmac_crc32_generate/readme.html) | This example application demonstrates how to use the DMAC peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC) | [DMAC memory transfer](/csp_apps_pic32mz_ef/apps/dmac/dmac_memory_transfer/readme.html) | This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer | [DMAC usart echo](/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_echo/readme.html) | This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes | [DMAC usart echo using Pattern Matching](/csp_apps_pic32mz_ef/apps/dmac/dmac_usart_pattern_matching/readme.html) | This example application demonstrates USART echo using DMA pattern matching feature | [DMT timeout](/csp_apps_pic32mz_ef/apps/dmt/dmt_timeout/readme.html) | This example application shows how the deadman timer resets by not clearing the deadman timer counter on switch press | [EBI SRAM read write](/csp_apps_pic32mz_ef/apps/ebi/ebi_sram_read_write/readme.html) | This example application demonstrates how to use the EBI peripheral to write and read from the SRAM | [GPIO interrupt](/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_interrupt/readme.html) | This example application demonstrate how to generate GPIO interrupt on switch press and release, and indicate the switch status using the LED | [GPIO Polling](/csp_apps_pic32mz_ef/apps/gpio/gpio_led_on_off_polling/readme.html) | This example application demonstrate how to poll the switch input, and indicate the switch status using the LED | [ICAP capture mode](/csp_apps_pic32mz_ef/apps/icap/icap_capture_mode/readme.html) | This example application shows how to use the ICAP peripheral to measure the pulse width of the input signal | [NVM flash read write](/csp_apps_pic32mz_ef/apps/nvm/flash_read_write/readme.html) | This example application demonstrates how to use the NVM to erase and program the internal Flash memory | [OCMP compare mode](/csp_apps_pic32mz_ef/apps/ocmp/ocmp_compare_mode/readme.html) | This example application shows how to use the OCMP peripheral to generate an active low, active high, and toggle output on compare match | [Low Power Modes](/csp_apps_pic32mz_ef/apps/power/low_power_modes/readme.html) | This example application demonstrates how to use different low power modes of the device | [RNG random number](/csp_apps_pic32mz_ef/apps/rng/rng_random_number/readme.html) | This example application shows how to use the RNG Peripheral library to generate a pseudo-random number | [RTCC alarm interrupt](/csp_apps_pic32mz_ef/apps/rtcc/rtcc_alarm/readme.html) | This example application shows how to use the RTCC to configure the time and generate the alarm | [SPI ping pong with DMA](/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma/readme.html) | This example demonstrates how to continuously transmit and receive data over a SPI interface using contiguous ping pong buffers with DMA | [SPI ping pong with DMA Chaining](/csp_apps_pic32mz_ef/apps/spi/spi_ping_pong_with_dma_chain/readme.html) | This example demonstrates how to continuously transmit and receive data over a SPI interface using ping pong buffers with DMA in chain mode | [SPI blocking](/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_blocking/readme.html) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data in a blocking manner | [SPI interrupt](/csp_apps_pic32mz_ef/apps/spi/spi_self_loopback_interrupt/readme.html) | This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data using interrupt | [SQI flash read write](/csp_apps_pic32mz_ef/apps/sqi/sqi_read_write/readme.html) | This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the SQI Serial Flash memory | [TMR periodic interrupt](/csp_apps_pic32mz_ef/apps/tmr/tmr_timer_mode/readme.html) | This example demonstrates how to use the TMR module in timer mode to generate periodic interrupt | [TMR1 periodic interrupt](/csp_apps_pic32mz_ef/apps/tmr1/tmr1_timer_mode/readme.html) | This example demonstrates how to use the TMR1 module in timer mode to generate periodic interrupt | [UART echo blocking](/csp_apps_pic32mz_ef/apps/uart/uart_echo_blocking/readme.html) | This example application demonstrates how to use the UART peripheral to transfer a block of data in a blocking manner | [UART echo interrupt](/csp_apps_pic32mz_ef/apps/uart/uart_echo_interrupt/readme.html) | This example application demonstrates how to use the UART peripheral to transfer a block of data in a non-blocking manner | [UART ring buffer](/csp_apps_pic32mz_ef/apps/uart/uart_ring_buffer_interrupt/readme.html) | This example application demonstrates how to use the UART peripheral in ring buffer mode | [WDT timeout](/csp_apps_pic32mz_ef/apps/wdt/wdt_timeout/readme.html) | This example application shows how the watchdog timer resets by not feeding the watchdog on switch press | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/csp_apps_pic32mz_ef.svg?style=social)]() ",
     "url": "http://localhost:4000/csp_apps_pic32mz_ef/",
     "relUrl": "/"
   }
