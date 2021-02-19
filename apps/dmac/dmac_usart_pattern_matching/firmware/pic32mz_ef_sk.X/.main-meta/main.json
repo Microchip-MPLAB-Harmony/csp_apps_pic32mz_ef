@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mz_ef_dmac_usart_pattern_matching",
-		"version": "3.0.1",
+		"version": "3.1.0",
 		"displayName": "DMAC usart echo using Pattern Matching Example for PIC32MZ EF Family",
 		"projectName": "dmac_usart_pattern_matching_pic32mz_ef_sk",
 		"shortDescription": "This example application demonstrates USART echo using DMA pattern matching feature.",
@@ -39,13 +39,17 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit"
+				"Development Kit",
+				"PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit"
 			],
 			[
-				"Harmony", "Peripherals", "DMAC"
+				"Harmony",
+				"Peripherals",
+				"DMAC"
 			],
 			[
-				"Peripherals", "DMAC"
+				"Peripherals",
+				"DMAC"
 			]
 		],
 		"peripherals": [

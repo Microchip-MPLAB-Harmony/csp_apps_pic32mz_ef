@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mz_ef_spi_ping_pong_with_dma_chain",
-		"version": "3.0.1",
+		"version": "3.1.0",
 		"displayName": "SPI ping pong with DMA Chaining Example for PIC32MZ EF Family",
 		"projectName": "spi_ping_pong_with_dma_chain_pic32mz_ef_sk",
 		"shortDescription": "This example demonstrates how to continuously transmit and receive data over a SPI interface using ping pong buffers with DMA in chain mode.",
@@ -39,13 +39,17 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit"
+				"Development Kit",
+				"PIC32MZ Embedded Connectivity with FPU (EF) Starter Kit"
 			],
 			[
-				"Harmony", "Peripherals", "SPI"
+				"Harmony",
+				"Peripherals",
+				"SPI"
 			],
 			[
-				"Peripherals", "SPI"
+				"Peripherals",
+				"SPI"
 			]
 		],
 		"peripherals": [
