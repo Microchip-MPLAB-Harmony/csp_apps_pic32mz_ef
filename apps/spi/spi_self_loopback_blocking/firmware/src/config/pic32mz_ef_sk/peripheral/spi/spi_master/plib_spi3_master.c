@@ -59,7 +59,7 @@
 
 void SPI3_Initialize ( void )
 {
-    uint32_t rdata;
+    uint32_t rdata = 0U;
 
     /* Disable SPI3 Interrupts */
     IEC4CLR = 0x4000000;
@@ -154,6 +154,11 @@ bool SPI3_Write(void* pTransmitData, size_t txSize)
 bool SPI3_Read(void* pReceiveData, size_t rxSize)
 {
     return(SPI3_WriteRead(NULL, 0, pReceiveData, rxSize));
+}
+
+bool SPI3_IsTransmitterBusy (void)
+{
+    return ((SPI3STAT & _SPI3STAT_SRMT_MASK) == 0)? true : false;
 }
 
 bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size_t rxSize)
