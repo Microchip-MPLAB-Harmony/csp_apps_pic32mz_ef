@@ -1,4 +1,4 @@
-<config configName="pic32mz_ef_sk" projectName="rtcc_alarm_pic32mz_ef_sk" configVersion="1.1" device="PIC32MZ2048EFH144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.3">
+<config configName="pic32mz_ef_sk" projectName="rtcc_alarm_pic32mz_ef_sk" configVersion="1.1" device="PIC32MZ2048EFH144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.2">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -23,7 +23,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.8"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -1546,19 +1546,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="uart2" name="UART_BRGH_MODE_COMMENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;uart2&gt;
-  &lt;uart2 dnOrder=&quot;0&quot; id=&quot;UART_BRGH_MODE_COMMENT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;text&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;***&amp;amp;#160;High&amp;amp;#160;Speed&amp;amp;#160;mode&amp;amp;#160;4x&amp;amp;#160;baud&amp;amp;#160;clock&amp;amp;#160;enabled&amp;amp;#160;(BRGH&amp;amp;#160;=&amp;amp;#160;1)&amp;amp;#160;***&lt;/Value&gt;
-      &lt;/String&gt;
-    &lt;/Attributes&gt;
-  &lt;/uart2&gt;
-&lt;/uart2&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="uart2" name="UART_CLOCK_FREQ"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;uart2&gt;
   &lt;uart2 dnOrder=&quot;0&quot; id=&quot;UART_CLOCK_FREQ&quot;&gt;
@@ -1638,7 +1625,7 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\pic32mz_ef_sk\toolchain_specifics.h</file>
-         <hash>5a13891d073d2ad5773c0c59ebe34074f2373103d565643f9e36a3b792feae9c</hash>
+         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.h</file>
@@ -1646,7 +1633,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>2eb429b72bafd2907a91e15bb068b55009aceb70bcae1fcefdbe9322295c597b</hash>
+         <hash>e2b7deaf115b0cdaee1c978d45a3a388eb8699b70f4f8d60d066207efa64cd2c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c</file>
@@ -1658,7 +1645,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\stdio\xc32_monitor.c</file>
-         <hash>1957d0040510756cd6a999d6f160cb685fee9aa800c832cfb8f5570b11b3e22b</hash>
+         <hash>d317df9256f870cf1750d572d0bae96d33be7798f71661733ea6f77ea41ae29c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\initialization.c</file>
@@ -1670,7 +1657,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart2.c</file>
-         <hash>e3027e4c038d907ceb77580e6f4993c2e04e2067a7fb1f4b6e1ed50d3dc6bb0d</hash>
+         <hash>413410e7a86f4cd6da2a9c94f03cfaf37fc1dab4fcbff3899f41837f6ce500c9</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\device.h</file>
@@ -1682,15 +1669,15 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\rtcc\plib_rtcc.c</file>
-         <hash>6db313636614e28842f3ead67e56152fdbda713a016c6733731baedb081b0b06</hash>
+         <hash>cd4a4a1dccd775c7a17dde827b8e6720cba040e7fcee56e95ea55c2ee72cee07</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart2.h</file>
-         <hash>5a4c11484dc3a36dcf43737ce55517bf0142b0a148b4e1b18a933f101907f2e4</hash>
+         <hash>ec165aa3fd6aa8c6069ef8bc97ea1d99ae4b300be7ea02a8a601b7384b2ad990</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.c</file>
-         <hash>6dad9d93206e808b25c5d582d394c58130e6869a02f7904c42b46e84d70274f7</hash>
+         <hash>c49bf362931b9072ce8cd6ee107421c6bb08fba4a851e3c48759e1e8f6ce88f2</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\rtcc\plib_rtcc.h</file>
@@ -1714,7 +1701,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.h</file>
-         <hash>52337e64d944c61a5a09e16b51ac7b323a547aa3d4039397c1718c579d226b1f</hash>
+         <hash>df6d121e8464522528a5a7b03eae4bc3436ee5ed9c9af4ad80563bdecd26dc8e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\interrupts.h</file>
