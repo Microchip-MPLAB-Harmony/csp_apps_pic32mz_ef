@@ -92,6 +92,23 @@ uint8_t CACHE_ALIGN sqi_cmd_hsr[7];
 uint8_t CACHE_ALIGN sqi_cmd_ULBPR;
 uint8_t CACHE_ALIGN sqi_cmd_dummy[6];
 
+static uint32_t maxPowerOfTwo(uint32_t num)
+{
+    uint32_t ret_val = 0;
+    uint32_t number = 0;
+
+    for (number = num; number >= 1U; number--)
+    {
+        // If number is a power of 2
+        if ((number & (number - 1U)) == 0U)
+        {
+            ret_val = number;
+            break;
+        }
+    }
+    return ret_val;
+}
+
 static void APP_EventHandler(uintptr_t context)
 {
     appData.xfer_done = true;
@@ -274,7 +291,7 @@ void APP_Read( void *rx_data, uint32_t rx_data_length, uint32_t address )
         }
         else
         {
-            numBytes = pendingBytes;
+            numBytes = maxPowerOfTwo(pendingBytes);
         }
 
         sqiBufDesc[i].bd_ctrl       = ( SQI_BDCTRL_BUFFLEN_VAL(numBytes) | SQI_BDCTRL_PKTINTEN |
@@ -385,6 +402,11 @@ void APP_Initialize(void)
         appData.writeBuffer[i] = i;
     }
 
+    if (BUFFER_SIZE < WRITE_BUFFER_SIZE)
+    {
+        memset(&appData.writeBuffer[BUFFER_SIZE], 0xFF, (WRITE_BUFFER_SIZE - BUFFER_SIZE));
+    }
+
     sqi_cmd_jedec[0]    = SST26_CMD_QUAD_JEDEC_ID_READ;
     sqi_cmd_eqio        = SST26_CMD_ENABLE_QUAD_IO;
     sqi_cmd_rsten       = SST26_CMD_FLASH_RESET_ENABLE;
@@ -482,7 +504,7 @@ void APP_Tasks ( void )
             {
                 sector_index += SECTOR_SIZE;
 
-                if (sector_index < BUFFER_SIZE)
+                if (sector_index < ERASE_BUFFER_SIZE)
                 {
                     appData.state = APP_STATE_ERASE_FLASH;
                 }
@@ -508,7 +530,7 @@ void APP_Tasks ( void )
             if (appData.xfer_done == true)
             {
                 write_index += PAGE_SIZE;
-                if (write_index < BUFFER_SIZE)
+                if (write_index < WRITE_BUFFER_SIZE)
                 {
                     appData.state = APP_STATE_WRITE_MEMORY;
                 }

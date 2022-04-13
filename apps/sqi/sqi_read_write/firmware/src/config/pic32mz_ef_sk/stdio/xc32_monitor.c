@@ -39,11 +39,15 @@
 *******************************************************************************/
 
 
-#ifdef __arm__
 /* Declaration of these functions are missing in stdio.h for ARM parts*/
+/* MISRAC 2012 deviation block start */
+/* MISRA C-2012 Rule 21.2 deviated four times.  Deviation record ID -  H3_MISRAC_2012_R_21_2_DR_1 */
+
+#ifdef __arm__
 int _mon_getc(int canblock);
 void _mon_putc(char c);
 #endif //__arm__
+
 
 int _mon_getc(int canblock)
 {
@@ -56,3 +60,4 @@ void _mon_putc(char c)
    (void)c;
 }
 
+/* MISRAC 2012 deviation block end */

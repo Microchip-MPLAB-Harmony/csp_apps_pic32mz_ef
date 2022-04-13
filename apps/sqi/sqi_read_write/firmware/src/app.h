@@ -73,16 +73,33 @@ extern "C" {
 #define PAGE_SIZE                  (256U)
 #define SECTOR_SIZE                (4096U)
 
-/* Erase, Write and Read 80KBytes of memory */
 #define SECTORS_TO_EWR             (20U)
 
-#define BUFFER_SIZE                (SECTOR_SIZE * SECTORS_TO_EWR)
+/* Erase 80KBytes (81920 Bytes) of memory */
+#define ERASE_BUFFER_SIZE          (SECTOR_SIZE * SECTORS_TO_EWR)
+
+/* For example, BUFFER_SIZE <= ERASE_BUFFER_SIZE,
+ * case 1 - BUFFER_SIZE < ERASE_BUFFER_SIZE, Read and Write 81667 (81920 - 256 + 3) Bytes of memory (Default)
+ * case 2 - BUFFER_SIZE = ERASE_BUFFER_SIZE, Read and Write 81920 Bytes of memory. Below macro need be defined as #define BUFFER_SIZE    ERASE_BUFFER_SIZE
+ */
+#define BUFFER_SIZE                (ERASE_BUFFER_SIZE - PAGE_SIZE + 3U)
+
+#define SIZE_GET(size, align)      (size + ((size % align)? (align - (size % align)) : 0))
+
+#define READ_BUFFER_SIZE           SIZE_GET(BUFFER_SIZE, CACHE_LINE_SIZE)
+
+#define WRITE_BUFFER_SIZE          SIZE_GET(BUFFER_SIZE, PAGE_SIZE)
 
 #define MEM_START_ADDRESS          (0x0U)
 
 #define SST26VF032B_JEDEC_ID       (0xBF4226BFUL)
 
-#define BUFF_DESC_NUMBER           (BUFFER_SIZE / PAGE_SIZE)
+#define ADD_BUFF_DESC_SIZE(x)      (((x >> 7) & 0x01) + ((x >> 6) & 0x01) + ((x >> 5) & 0x01) + ((x >> 4) & 0x01) + \
+                                   ((x >> 3) & 0x01) + ((x >> 2) & 0x01) + ((x >> 1) & 0x01) + ((x) & 0x01)) 
+
+#define BUFF_DESC_SIZE(x, y)       (((x % y) == 0) ? (x / y) : ((x / y) + ADD_BUFF_DESC_SIZE((x % y))))
+
+#define BUFF_DESC_NUMBER           BUFF_DESC_SIZE(BUFFER_SIZE, PAGE_SIZE)
 
 #define CMD_DESC_NUMBER             5
 
@@ -180,10 +197,10 @@ typedef struct
     uint32_t jedec_id;
 
     /* Read Buffer */
-    uint8_t readBuffer[BUFFER_SIZE] CACHE_ALIGN;
+    uint8_t readBuffer[READ_BUFFER_SIZE] CACHE_ALIGN;
 
     /* Write Buffer*/
-    uint8_t writeBuffer[BUFFER_SIZE] CACHE_ALIGN;
+    uint8_t writeBuffer[WRITE_BUFFER_SIZE] CACHE_ALIGN;
 } APP_DATA;
 
 /* SST26 Command set
