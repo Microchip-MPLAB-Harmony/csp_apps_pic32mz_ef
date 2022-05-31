@@ -71,9 +71,6 @@
 // *****************************************************************************
 
 void DMT_Enable( void );
-
-void DMT_Disable( void );
-
 void DMT_Clear( void );
 
 bool DMT_ClearWindowStatusGet( void );
