@@ -41,27 +41,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DCDD2CA75B49768C6F79ADE491F5AA0F
-- generatedChecksum: ED6722C1169FEA2DA1F15D907F42AA46
+- generatedChecksum: B78784342D92F137A0446EBC260A199D
   logicalPath: config/pic32mz_ef_sk/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: ED6722C1169FEA2DA1F15D907F42AA46
-- generatedChecksum: 7FE3F440D09D92D0AAAFFAA0099E8C97
+  userChecksum: B78784342D92F137A0446EBC260A199D
+- generatedChecksum: E8EE1DC085EC7953479E52AC14007011
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7FE3F440D09D92D0AAAFFAA0099E8C97
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: E8EE1DC085EC7953479E52AC14007011
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mz_ef_sk/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: FF08F4CF197FA213ECCB435F6B80F489
   logicalPath: config/pic32mz_ef_sk
   name: definitions.h
@@ -104,20 +104,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C465EE2268CD765C11300F75C6560CC
-- generatedChecksum: 90F589D0B619D39690EF661B19650001
+- generatedChecksum: F00510017539274005F7BA73A24900FB
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 90F589D0B619D39690EF661B19650001
-- generatedChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: F00510017539274005F7BA73A24900FB
+- generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mz_ef_sk
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: CAC44960D20AEC03CF4B325A1CD2877C
 - generatedChecksum: C734E3299D476FDDB140E61BA3B5C31B
   logicalPath: config/pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
