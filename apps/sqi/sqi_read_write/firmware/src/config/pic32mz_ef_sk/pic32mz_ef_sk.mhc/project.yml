@@ -34,20 +34,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1DCA08DB77983352E509013694FFDA0C
-- generatedChecksum: AEEEEE203190423C2C13EE4EB96F909F
+- generatedChecksum: 4D6CD10836C28BC125338FC6051943BB
   logicalPath: config/pic32mz_ef_sk/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AEEEEE203190423C2C13EE4EB96F909F
-- generatedChecksum: F315D438D23229A55B302190B16DD88F
+  userChecksum: 4D6CD10836C28BC125338FC6051943BB
+- generatedChecksum: 4A82A346A5232E85CC15910B61304B39
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F315D438D23229A55B302190B16DD88F
+  userChecksum: 4A82A346A5232E85CC15910B61304B39
 - generatedChecksum: A2E207D459736D20CF2C38D551EE1A99
   logicalPath: config/pic32mz_ef_sk/peripheral/sqi
   name: plib_sqi1.c
@@ -55,13 +55,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A2E207D459736D20CF2C38D551EE1A99
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mz_ef_sk/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: CA95B623772300D03852ED11F190B788
   logicalPath: config/pic32mz_ef_sk
   name: definitions.h
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C465EE2268CD765C11300F75C6560CC
-- generatedChecksum: AE0016C64F1996B676C50641AC41D90C
+- generatedChecksum: 16B2427E6D09F38C25B0BEAE926CEABD
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: AE0016C64F1996B676C50641AC41D90C
+  userChecksum: 16B2427E6D09F38C25B0BEAE926CEABD
 - generatedChecksum: 83A29BB1714DD4AF71B7176C4A487262
   logicalPath: config/pic32mz_ef_sk/peripheral/sqi
   name: plib_sqi1.h
@@ -118,13 +118,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BA2AAEA19E581F59C1E78E73982F7C78
-- generatedChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+- generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mz_ef_sk
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: CAC44960D20AEC03CF4B325A1CD2877C
 - generatedChecksum: C734E3299D476FDDB140E61BA3B5C31B
   logicalPath: config/pic32mz_ef_sk
   name: p32MZ2048EFH144.ld

@@ -37,27 +37,18 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
+#include <stddef.h>
+
+extern int read(int handle, void *buffer, unsigned int len);
+extern int write(int handle, void * buffer, size_t count);
 
 
-/* Declaration of these functions are missing in stdio.h for ARM parts*/
-/* MISRAC 2012 deviation block start */
-/* MISRA C-2012 Rule 21.2 deviated four times.  Deviation record ID -  H3_MISRAC_2012_R_21_2_DR_1 */
-
-#ifdef __arm__
-int _mon_getc(int canblock);
-void _mon_putc(char c);
-#endif //__arm__
-
-
-int _mon_getc(int canblock)
+int read(int handle, void *buffer, unsigned int len)
 {
-   (void)canblock;
-   return 0;
+   return -1;
 }
 
-void _mon_putc(char c)
+int write(int handle, void * buffer, size_t count)
 {
-   (void)c;
+   return -1;
 }
-
-/* MISRAC 2012 deviation block end */
