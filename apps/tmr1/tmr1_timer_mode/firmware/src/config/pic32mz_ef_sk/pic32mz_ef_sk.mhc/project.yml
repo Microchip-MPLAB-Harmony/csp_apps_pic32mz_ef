@@ -34,20 +34,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2DABAED8044A2293937DBD7764727C6D
-- generatedChecksum: 1F19DD53C12B0F7628B7A8AA1C18050F
+- generatedChecksum: 98BC997E8790BBD733F66CC2D3332268
   logicalPath: config/pic32mz_ef_sk/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1F19DD53C12B0F7628B7A8AA1C18050F
-- generatedChecksum: E060BD7028EF5A479136A2F93ACD1B68
+  userChecksum: 98BC997E8790BBD733F66CC2D3332268
+- generatedChecksum: 95BD768A44A10C0567A8CFBB6CB98B9E
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E060BD7028EF5A479136A2F93ACD1B68
+  userChecksum: 95BD768A44A10C0567A8CFBB6CB98B9E
 - generatedChecksum: 8952B56585611F5BC2481C97EA04AB3A
   logicalPath: config/pic32mz_ef_sk/peripheral/tmr1
   name: plib_tmr1.c
@@ -55,13 +55,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8952B56585611F5BC2481C97EA04AB3A
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mz_ef_sk/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: D6CA782ABE1EA0BA4F7ADEA9CF3B0CC8
   logicalPath: config/pic32mz_ef_sk
   name: definitions.h
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C465EE2268CD765C11300F75C6560CC
-- generatedChecksum: 2E3278A543811A4080BCD8883D91F6F8
+- generatedChecksum: 52CFAB0D176D8770A6C21BD9DB27B431
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2E3278A543811A4080BCD8883D91F6F8
+  userChecksum: 52CFAB0D176D8770A6C21BD9DB27B431
 - generatedChecksum: 32D7539D9231F3C159ABECE91A0281EA
   logicalPath: config/pic32mz_ef_sk/peripheral/tmr1
   name: plib_tmr1.h
@@ -118,13 +118,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 69E7C8CDAB1B32838331EE261170CEA4
-- generatedChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+- generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mz_ef_sk
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: CAC44960D20AEC03CF4B325A1CD2877C
 - generatedChecksum: C734E3299D476FDDB140E61BA3B5C31B
   logicalPath: config/pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
