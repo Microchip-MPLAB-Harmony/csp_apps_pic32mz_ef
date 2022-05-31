@@ -66,16 +66,20 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
 
     switch(mode)
     {
-        case LOW_POWER_IDLE_MODE: 
+        case LOW_POWER_IDLE_MODE:
                         OSCCONCLR = _OSCCON_SLPEN_MASK;
                         break;
         case LOW_POWER_SLEEP_MODE:
                         OSCCONSET = _OSCCON_SLPEN_MASK;
                         break;
-        default: 
+        case LOW_POWER_DREAM_MODE:
+                        OSCCONSET = _OSCCON_SLPEN_MASK | _OSCCON_DRMEN_MASK;
+                        break;
+        default:
                         return;
     }
 
+    /* Lock system */
     SYSKEY = 0x0;
 
     /* enter into selected low power mode */

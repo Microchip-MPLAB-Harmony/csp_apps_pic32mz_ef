@@ -75,6 +75,7 @@ typedef enum {
 
     LOW_POWER_IDLE_MODE,
     LOW_POWER_SLEEP_MODE,
+    LOW_POWER_DREAM_MODE,
 } POWER_LOW_POWER_MODE;
 
 // *****************************************************************************
