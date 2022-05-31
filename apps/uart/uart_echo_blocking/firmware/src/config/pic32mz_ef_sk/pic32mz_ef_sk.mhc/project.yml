@@ -34,34 +34,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5192896384BDEA0B08CDCE5833E31223
-- generatedChecksum: ED6722C1169FEA2DA1F15D907F42AA46
+- generatedChecksum: B78784342D92F137A0446EBC260A199D
   logicalPath: config/pic32mz_ef_sk/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: ED6722C1169FEA2DA1F15D907F42AA46
-- generatedChecksum: 2349F7D7564441018FAB6451974DE71F
+  userChecksum: B78784342D92F137A0446EBC260A199D
+- generatedChecksum: AC8AE4A6577C04BF2527C936988559DC
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2349F7D7564441018FAB6451974DE71F
-- generatedChecksum: 8C4F3C760E9FEC38BFA5F5E1734D3307
+  userChecksum: AC8AE4A6577C04BF2527C936988559DC
+- generatedChecksum: C17B61966F1C13CDE77A72DF9065D89A
   logicalPath: config/pic32mz_ef_sk/peripheral/uart
   name: plib_uart2.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8C4F3C760E9FEC38BFA5F5E1734D3307
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: C17B61966F1C13CDE77A72DF9065D89A
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mz_ef_sk/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: F2BCA9396EC02A9E0848C5562EE20BDE
   logicalPath: config/pic32mz_ef_sk
   name: definitions.h
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C465EE2268CD765C11300F75C6560CC
-- generatedChecksum: E4FB748DE1C950CA2391E400918C354B
+- generatedChecksum: D0EF1508998FCACA4FA88583B9577D1E
   logicalPath: config/pic32mz_ef_sk/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: E4FB748DE1C950CA2391E400918C354B
+  userChecksum: D0EF1508998FCACA4FA88583B9577D1E
 - generatedChecksum: 03F4F642FB053452528D6138C4E85789
   logicalPath: config/pic32mz_ef_sk/peripheral/uart
   name: plib_uart2.h
@@ -118,13 +118,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 91611515A95D92B82B7F4064C16D122B
-- generatedChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+- generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mz_ef_sk
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: CAC44960D20AEC03CF4B325A1CD2877C
 - generatedChecksum: C734E3299D476FDDB140E61BA3B5C31B
   logicalPath: config/pic32mz_ef_sk
   name: p32MZ2048EFH144.ld
