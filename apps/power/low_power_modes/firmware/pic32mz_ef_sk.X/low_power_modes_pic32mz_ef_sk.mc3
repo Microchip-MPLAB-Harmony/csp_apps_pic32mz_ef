@@ -6,6 +6,10 @@
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
       <entry>
+         <string>core_timer</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
          <string>dfp</string>
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
@@ -31,25 +35,26 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.2.0"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;181&quot; canvasWidth=&quot;729&quot; dnOrder=&quot;0&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;core&quot; x=&quot;220&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;power&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;rcon&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;stdio&quot; x=&quot;189&quot; y=&quot;88&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tmr1&quot; x=&quot;600&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;uart2&quot; x=&quot;15&quot; y=&quot;69&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;core_timer&quot; x=&quot;760&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;power&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;rcon&quot; x=&quot;460&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;stdio&quot; x=&quot;189&quot; y=&quot;88&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;tmr1&quot; x=&quot;600&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;uart2&quot; x=&quot;15&quot; y=&quot;69&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
+    &lt;GraphSettings canvasHeight=&quot;181&quot; canvasWidth=&quot;897&quot; dnOrder=&quot;1&quot;/&gt;
   &lt;/UserData&gt;
 &lt;/UserData&gt;
 </value>
@@ -1016,6 +1021,83 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CORE_TIMER_INTERRUPT_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_INTERRUPT_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core_timer&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CORE_TIMER_INTERRUPT_ENABLE_UPDATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_INTERRUPT_ENABLE_UPDATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CORE_TIMER_INTERRUPT_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_INTERRUPT_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core_timer&quot; value=&quot;CORE_TIMER_Handler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CORE_TIMER_INTERRUPT_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_INTERRUPT_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core_timer&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_0_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_0_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_0_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_0_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_0_INTERRUPT_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_0_INTERRUPT_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;CORE_TIMER_Handler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_119_ENABLE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_119_ENABLE&quot;&gt;
@@ -1641,6 +1723,199 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CALLBACK_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CALLBACK_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="COMPARE_SET_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;COMPARE_SET_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_COMPARE_MS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_COMPARE_MS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_FREQUENCY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_FREQUENCY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_IEC_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_IEC_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_IEC_REG_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_IEC_REG_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_IFS_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_IFS_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_IFS_REG_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_IFS_REG_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_INTERRUPT_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_INTERRUPT_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_PERIODIC_INTERRUPT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_PERIODIC_INTERRUPT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_PERIOD_MS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_PERIOD_MS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_PERIOD_US"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_PERIOD_US&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_PERIOD_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_PERIOD_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="CORE_TIMER_STOP_IN_DEBUG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;CORE_TIMER_STOP_IN_DEBUG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="COUNTER_GET_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;COUNTER_GET_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="FREQUENCY_GET_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;FREQUENCY_GET_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="IRQ_ENUM_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;IRQ_ENUM_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="TIMER_PERIOD_MAX"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;TIMER_PERIOD_MAX&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="TIMER_START_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;TIMER_START_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="TIMER_STOP_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;TIMER_STOP_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core_timer" name="TIMER_WIDTH"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core_timer&gt;
+  &lt;core_timer dnOrder=&quot;0&quot; id=&quot;TIMER_WIDTH&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core_timer&gt;
+&lt;/core_timer&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="dfp" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>__ROOTVIEW</value>
       </entry>
@@ -1869,38 +2144,86 @@
 </value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\toolchain_specifics.h</file>
-         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
+         <file>..\src\config\pic32mz_ef_sk\definitions.h</file>
+         <hash>f66221d3a358b01a39569107427d2dd449fa55ab7d2fbed24f3db315c9444e31</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\rcon\plib_rcon.c</file>
-         <hash>8bda2a89c483b146d19c026ca1184569793209eb17b6d6ed5a1f0401d48956bc</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1.c</file>
-         <hash>7b4ddb8b814071e1f730fb6797e29c5f254bb67a70cb900c2200e527e89a1918</hash>
+         <file>..\src\config\pic32mz_ef_sk\device.h</file>
+         <hash>10ec93c43a7b158a129ae05bd8f4a59ff5bcf3d0f3f062fdd64c374bc2d42099</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\exceptions.c</file>
          <hash>f5ad435bbdb69c22d638ce10fd145b4cf0f12dc654d814a836293ca96fa992e5</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\stdio\xc32_monitor.c</file>
-         <hash>02b7c5343c9797c6ffb7d442e0b10098bcfb84deb476c7ceacf79787713ebeca</hash>
+         <file>..\src\config\pic32mz_ef_sk\initialization.c</file>
+         <hash>77079744c3587eb0130c9e768f891cf94ff284fb052efee816b1659c6dafee48</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\power\plib_power.h</file>
-         <hash>a91c61cf548253a7afe5773b587b2d9ee95439152dde452777332f76b1167b83</hash>
+         <file>..\src\config\pic32mz_ef_sk\interrupts.c</file>
+         <hash>df0188a317b8f4724c29c86e0cc59c491f7ef4da2adfb1c133f96f7fa2d1e657</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\interrupts.h</file>
+         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\p32MZ2048EFH144.ld</file>
+         <hash>bb79d747f7a82dd825972c04040708a3816a5ec975048a3decfb71aa3c0eec7c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c</file>
+         <hash>ee71e703d304ea38b87fbe0c5b993fb413dd6f0b3a8addc0cb10e0daa362b0e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.h</file>
+         <hash>aeb73e24e5a518024b1c3f7dce953a5cbacead08f55e80ae465fc8d2e522e477</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.c</file>
+         <hash>81bb4282c558a236bcfe370abdab4875441131121ced0d850cf4fbc9e6cd602f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.h</file>
+         <hash>655e6a0ec07b276bd837a2cd547c9eb7900f67812fec2ea4a953fb1e3ad6a411</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c</file>
+         <hash>a216dc70943d2e045e435e4fb0620107b6fce79cd0b524323f7613a5f1e47699</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.h</file>
+         <hash>6e4ba1391d4265ebf1fb388597b8b76b5b437d934cd20ab591f853d0c840b14d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\power\plib_power.c</file>
          <hash>b10abb54193e54403bd145098f873d6516407dd160f2421dc2c0d06a2a7a4eb0</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\definitions.h</file>
-         <hash>f66221d3a358b01a39569107427d2dd449fa55ab7d2fbed24f3db315c9444e31</hash>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\power\plib_power.h</file>
+         <hash>a91c61cf548253a7afe5773b587b2d9ee95439152dde452777332f76b1167b83</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\rcon\plib_rcon.c</file>
+         <hash>8bda2a89c483b146d19c026ca1184569793209eb17b6d6ed5a1f0401d48956bc</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\rcon\plib_rcon.h</file>
+         <hash>219dfa9a89cc030bed72c82dd4b87a8bfd548e368c686872beb1cc5ad4ecaa87</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1.c</file>
+         <hash>7b4ddb8b814071e1f730fb6797e29c5f254bb67a70cb900c2200e527e89a1918</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1.h</file>
+         <hash>b28749c5aeabe65f99fb625e1d171fcc0979f5b85f0ff072a6fb610d66236832</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1_common.h</file>
+         <hash>b1c97e9466cc0bfc2e05ec0af7fb56a5946e8df5675a1f206cfc5dbb42d85f25</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart2.c</file>
@@ -1911,68 +2234,20 @@
          <hash>ec165aa3fd6aa8c6069ef8bc97ea1d99ae4b300be7ea02a8a601b7384b2ad990</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\rcon\plib_rcon.h</file>
-         <hash>219dfa9a89cc030bed72c82dd4b87a8bfd548e368c686872beb1cc5ad4ecaa87</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\p32MZ2048EFH144.ld</file>
-         <hash>bb79d747f7a82dd825972c04040708a3816a5ec975048a3decfb71aa3c0eec7c</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.h</file>
-         <hash>aeb73e24e5a518024b1c3f7dce953a5cbacead08f55e80ae465fc8d2e522e477</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>a216dc70943d2e045e435e4fb0620107b6fce79cd0b524323f7613a5f1e47699</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c</file>
-         <hash>ee71e703d304ea38b87fbe0c5b993fb413dd6f0b3a8addc0cb10e0daa362b0e1</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\initialization.c</file>
-         <hash>77079744c3587eb0130c9e768f891cf94ff284fb052efee816b1659c6dafee48</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\device.h</file>
-         <hash>10ec93c43a7b158a129ae05bd8f4a59ff5bcf3d0f3f062fdd64c374bc2d42099</hash>
-      </entry>
-      <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart_common.h</file>
          <hash>c218c6173a59f6dff90ca776b4bf86cc2a856fa7e3272fb08dd42921ef56b24b</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.c</file>
-         <hash>81bb4282c558a236bcfe370abdab4875441131121ced0d850cf4fbc9e6cd602f</hash>
+         <file>..\src\config\pic32mz_ef_sk\stdio\xc32_monitor.c</file>
+         <hash>02b7c5343c9797c6ffb7d442e0b10098bcfb84deb476c7ceacf79787713ebeca</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1_common.h</file>
-         <hash>b1c97e9466cc0bfc2e05ec0af7fb56a5946e8df5675a1f206cfc5dbb42d85f25</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.h</file>
-         <hash>655e6a0ec07b276bd837a2cd547c9eb7900f67812fec2ea4a953fb1e3ad6a411</hash>
+         <file>..\src\config\pic32mz_ef_sk\toolchain_specifics.h</file>
+         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
          <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\interrupts.c</file>
-         <hash>df0188a317b8f4724c29c86e0cc59c491f7ef4da2adfb1c133f96f7fa2d1e657</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.h</file>
-         <hash>6e4ba1391d4265ebf1fb388597b8b76b5b437d934cd20ab591f853d0c840b14d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1.h</file>
-         <hash>b28749c5aeabe65f99fb625e1d171fcc0979f5b85f0ff072a6fb610d66236832</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_sk\interrupts.h</file>
-         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

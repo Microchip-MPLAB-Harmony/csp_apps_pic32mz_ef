@@ -117,7 +117,9 @@ int main ( void )
                 printf("\n\rPress Switch SW1 to wakeup the device         ");
                 GPIO_PinInterruptEnable(SWITCH_PIN);
                 TMR1_Stop();
+                CORETIMER_DelayUs(1000);
                 POWER_LowPowerModeEnter(LOW_POWER_SLEEP_MODE);
+                CORETIMER_DelayUs(1000);
                 printf("\n\rSW1 Pressed, exiting SLEEP mode......");
                 SWITCH_InterruptDisable();
                 TMR1_Start();
