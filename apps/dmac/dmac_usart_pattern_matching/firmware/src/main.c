@@ -61,17 +61,17 @@ static void ReceiveCompleteCallback(DMAC_TRANSFER_EVENT event, uintptr_t context
 #define UART_TRANSMIT_CHANNEL   DMAC_CHANNEL_0
 #define UART_RECEIVE_CHANNEL   DMAC_CHANNEL_1
 
-char __attribute__((coherent)) messageStart[] = "**** USART Echo Using DMA Pattern Matching ****\r\n\
+static char __attribute__((coherent)) messageStart[] = "**** USART Echo Using DMA Pattern Matching ****\r\n\
 **** Type a buffer of less than 10 characters followed ****\r\n\
 **** by 'Enter' key and observe it echo back using DMA ****\r\n\
 **** LED toggles each time the buffer is echoed ****\r\n";
-char __attribute__((coherent)) receiveBuffer[RX_BUFFER_SIZE] = {};
-char __attribute__((coherent)) echoBuffer[RX_BUFFER_SIZE] = {};
+static char __attribute__((coherent)) receiveBuffer[RX_BUFFER_SIZE] = {};
+static char __attribute__((coherent)) echoBuffer[RX_BUFFER_SIZE] = {};
 
-char __attribute__((coherent)) endChar[2]="\r\n";
+static char __attribute__((coherent)) endChar[2]="\r\n";
 
-volatile bool writeStatus = false;
-volatile bool readStatus = false;
+volatile static bool writeStatus = false;
+volatile static bool readStatus = false;
 
 // *****************************************************************************
 // *****************************************************************************

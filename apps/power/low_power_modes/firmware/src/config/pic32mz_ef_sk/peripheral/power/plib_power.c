@@ -52,6 +52,7 @@
 
 #include "plib_power.h"
 
+#define WAIT asm volatile("wait")
 // *****************************************************************************
 // *****************************************************************************
 // Section: Power Implementation
@@ -59,10 +60,11 @@
 // *****************************************************************************
 void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
 {
+    bool check = false;
     /* Unlock system */
-    SYSKEY = 0x00000000;
-    SYSKEY = 0xAA996655;
-    SYSKEY = 0x556699AA;
+    SYSKEY = 0x00000000U;
+    SYSKEY = 0xAA996655U;
+    SYSKEY = 0x556699AAU;
 
     switch(mode)
     {
@@ -76,13 +78,19 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
                         OSCCONSET = _OSCCON_SLPEN_MASK | _OSCCON_DRMEN_MASK;
                         break;
         default:
-                        return;
+                        check = true;
+                        break;
+    }
+    
+    if(check == true)
+    {
+        return;
     }
 
     /* Lock system */
     SYSKEY = 0x0;
 
     /* enter into selected low power mode */
-    asm volatile("wait");
+    WAIT;
 }
 

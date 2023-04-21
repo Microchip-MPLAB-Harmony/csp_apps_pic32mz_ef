@@ -76,11 +76,11 @@ typedef enum
 } APP_STATES;
 
 /* first half of array is considered as ping buffer and 2nd half as pong buffer */
-uint8_t __attribute__((coherent, aligned(32))) txBuffer[] = "INITIAL_DMA_DATA_FROM_PING_BUFFERinitial_dma_data_from_pong_buffer";
-uint8_t __attribute__((coherent, aligned(32))) rxBuffer[sizeof(txBuffer)] = {1};
+static uint8_t __attribute__((coherent, aligned(32))) txBuffer[] = "INITIAL_DMA_DATA_FROM_PING_BUFFERinitial_dma_data_from_pong_buffer";
+static uint8_t __attribute__((coherent, aligned(32))) rxBuffer[sizeof(txBuffer)] = {1};
 
 
-volatile APP_STATES state = APP_STATE_INITIALIZE;
+volatile static APP_STATES state = APP_STATE_INITIALIZE;
 
 static void APP_DMA_TxCallbackHandler(DMAC_TRANSFER_EVENT event, uintptr_t context)
 {

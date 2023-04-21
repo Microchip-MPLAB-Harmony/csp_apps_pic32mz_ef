@@ -82,13 +82,13 @@ typedef enum
     BUFFER_TYPE_PONG
 }BUFFER_TYPE;
 
-uint8_t __attribute__((coherent, aligned(32))) txPingBuffer[] = "INITIAL_DMA_DATA_FROM_PING_BUFFER";
-uint8_t __attribute__((coherent, aligned(32))) rxPingBuffer[sizeof(txPingBuffer)] = {1};
+static uint8_t __attribute__((coherent, aligned(32))) txPingBuffer[] = "INITIAL_DMA_DATA_FROM_PING_BUFFER";
+static uint8_t __attribute__((coherent, aligned(32))) rxPingBuffer[sizeof(txPingBuffer)] = {1};
 
-uint8_t __attribute__((coherent, aligned(32))) txPongBuffer[] = "initial_dma_data_from_pong_buffer";
-uint8_t __attribute__((coherent, aligned(32))) rxPongBuffer[sizeof(txPongBuffer)] = {2};
+static uint8_t __attribute__((coherent, aligned(32))) txPongBuffer[] = "initial_dma_data_from_pong_buffer";
+static uint8_t __attribute__((coherent, aligned(32))) rxPongBuffer[sizeof(txPongBuffer)] = {2};
 
-volatile APP_STATES state = APP_STATE_INITIALIZE;
+volatile static APP_STATES state = APP_STATE_INITIALIZE;
 
 static void APP_DMA_TxCallbackHandler(DMAC_TRANSFER_EVENT event, uintptr_t context)
 {
