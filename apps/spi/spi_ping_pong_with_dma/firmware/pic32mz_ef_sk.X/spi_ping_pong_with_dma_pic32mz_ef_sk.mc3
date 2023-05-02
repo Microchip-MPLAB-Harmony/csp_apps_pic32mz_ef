@@ -1,4 +1,4 @@
-<config configName="pic32mz_ef_sk" projectName="spi_ping_pong_with_dma_pic32mz_ef_sk" configVersion="1.1" device="PIC32MZ2048EFH144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="pic32mz_ef_sk" projectName="spi_ping_pong_with_dma_pic32mz_ef_sk" configVersion="1.1" device="PIC32MZ2048EFH144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -15,7 +15,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -1794,11 +1794,11 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\spi\spi_master\plib_spi1_master.c</file>
-         <hash>0b47f9726e0de1a292723ed301c65b00c1ebad6698dd6b004a95a65da65f64c1</hash>
+         <hash>55f1a9ef344cbc542098700ae6d01e2ef3bd5960ff5d69f7beda603ab2a97d77</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\toolchain_specifics.h</file>
-         <hash>84276afca06869943bba17727ff4f41fea61e4f81329ee20a333cafe39562a73</hash>
+         <hash>46df1f0890b9f712472ddd70e6cbc7812f6d093bdd692d48dda0b8aa18e1b9f1</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\spi\spi_master\plib_spi_master_common.h</file>
@@ -1806,23 +1806,23 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.h</file>
-         <hash>aeb73e24e5a518024b1c3f7dce953a5cbacead08f55e80ae465fc8d2e522e477</hash>
+         <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>77b18dd38fbc5719255b3201d74eed3290ec58dfd6c91852515834682b8e1802</hash>
+         <hash>d535161d84a684d610383e9df67ece05296e59a9942ca41958e62d146ba95017</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c</file>
-         <hash>3ce44c3dfd2f0d812c79104720eac53a42015b52ecd81399fc30d6d95f788bb7</hash>
+         <hash>864b8ef0922d8bb007e0be46e341c7755e4e959d836d32a0aac3055b1a40a2cb</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\dmac\plib_dmac.c</file>
-         <hash>6268d5cf02b4467dbc9004f4471e0a02869b78b7690edfb4c4524df61f245b62</hash>
+         <hash>a47a751e2e4eb0978f9d61d24727d7c605242e7f28e769b858b7e3ca1c9be456</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\exceptions.c</file>
-         <hash>f5ad435bbdb69c22d638ce10fd145b4cf0f12dc654d814a836293ca96fa992e5</hash>
+         <hash>ad7c8afe7fa8ac3a356ad4a7b779a2bc7c6d8e9aaf9d3cd7315a93a29f03978a</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\stdio\xc32_monitor.c</file>
@@ -1830,11 +1830,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\dmac\plib_dmac.h</file>
-         <hash>23017fe3fc9a89674736de1d7c9f8f14b7334f1e9df251120de1397731ab7299</hash>
+         <hash>78b9533671371600d12031eb6280ef51c292677cc636c809bb1b16ab772a4f8d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\initialization.c</file>
-         <hash>86c1637fa629aa5e1081369c9b8a58d847f68a94bcfc6ca01ea9444b46a58ef3</hash>
+         <hash>89ed0a917c01a4698bac47cc7ff8dcd10248093bd41e89be11378c373554830d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\spi\spi_master\plib_spi1_master.h</file>
@@ -1842,7 +1842,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\definitions.h</file>
-         <hash>b990c9a2f2bee0a9d462667b46ea347b212d9b7a03e5f0d902811b5ef1b8c9cc</hash>
+         <hash>07aeefc5429f703f5b7a296ec86e5204b64bc086da17095fde05d6a44bfdb793</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\device.h</file>
@@ -1850,11 +1850,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.c</file>
-         <hash>0ae48a3b08a3a8736a2ed1c464328bb2e134c178bcc7815d4a34eddd78b8cff1</hash>
+         <hash>a99ce37b48afca360d860c6aff116a8b421dfe8ed361335dbfdfb764029f30ee</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.h</file>
-         <hash>655e6a0ec07b276bd837a2cd547c9eb7900f67812fec2ea4a953fb1e3ad6a411</hash>
+         <hash>99ea8255ad17a7d7368d57f2df1280fffac1961e1b89a2cb62bc35be8072e5bd</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
@@ -1862,7 +1862,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\interrupts.c</file>
-         <hash>1d3170c830ea1a108a567bc7171155ee45ffca6cd8372a9babc545a2431d7a76</hash>
+         <hash>2196bfe46571f90cb3df14e1b3cc375b1de24c333cb4a745b25ea54c0af4d265</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\p32MZ2048EFH144.ld</file>
@@ -1874,7 +1874,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\interrupts.h</file>
-         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
+         <hash>000e17272675489365a3bd288e34da36b458bce6ae3c9256374aedbfcf88c4bd</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
