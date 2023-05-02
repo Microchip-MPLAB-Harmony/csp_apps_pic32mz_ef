@@ -121,7 +121,7 @@ void EBI_Initialize (void)
 	EBISMCON = 0x1;
 	
 	/* Setup CFGEBIA	*/
-	CFGEBIA = 0x800fffffL;
+	CFGEBIA = 0x800fffffLU;
 
 	/* Setup CFGEBIC	*/
 	/* EBIRDYINV3 = false	*/
