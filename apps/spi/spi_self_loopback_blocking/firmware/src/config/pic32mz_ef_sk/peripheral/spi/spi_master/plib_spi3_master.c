@@ -40,6 +40,7 @@
 *******************************************************************************/
 
 #include "plib_spi3_master.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -48,14 +49,14 @@
 // *****************************************************************************
 
 
-#define SPI3_CON_MSTEN                      (1 << _SPI3CON_MSTEN_POSITION)
-#define SPI3_CON_CKP                        (0 << _SPI3CON_CKP_POSITION)
-#define SPI3_CON_CKE                        (1 << _SPI3CON_CKE_POSITION)
-#define SPI3_CON_MODE_32_MODE_16            (0 << _SPI3CON_MODE16_POSITION)
-#define SPI3_CON_ENHBUF                     (1 << _SPI3CON_ENHBUF_POSITION)
-#define SPI3_CON_MCLKSEL                    (0 << _SPI3CON_MCLKSEL_POSITION)
-#define SPI3_CON_MSSEN                      (1 << _SPI3CON_MSSEN_POSITION)
-#define SPI3_CON_SMP                        (0 << _SPI3CON_SMP_POSITION)
+#define SPI3_CON_MSTEN                      (1UL << _SPI3CON_MSTEN_POSITION)
+#define SPI3_CON_CKP                        (0UL << _SPI3CON_CKP_POSITION)
+#define SPI3_CON_CKE                        (1UL << _SPI3CON_CKE_POSITION)
+#define SPI3_CON_MODE_32_MODE_16            (0UL << _SPI3CON_MODE16_POSITION)
+#define SPI3_CON_ENHBUF                     (1UL << _SPI3CON_ENHBUF_POSITION)
+#define SPI3_CON_MCLKSEL                    (0UL << _SPI3CON_MCLKSEL_POSITION)
+#define SPI3_CON_MSSEN                      (1UL << _SPI3CON_MSSEN_POSITION)
+#define SPI3_CON_SMP                        (0UL << _SPI3CON_SMP_POSITION)
 
 void SPI3_Initialize ( void )
 {
@@ -112,12 +113,12 @@ bool SPI3_TransferSetup (SPI_TRANSFER_SETUP* setup, uint32_t spiSourceClock )
     uint32_t errorHigh;
     uint32_t errorLow;
 
-    if ((setup == NULL) || (setup->clockFrequency == 0))
+    if ((setup == NULL) || (setup->clockFrequency == 0U))
     {
         return false;
     }
 
-    if(spiSourceClock == 0)
+    if(spiSourceClock == 0U)
     {
         // Use Master Clock Frequency set in GUI
         spiSourceClock = 100000000;
@@ -134,14 +135,14 @@ bool SPI3_TransferSetup (SPI_TRANSFER_SETUP* setup, uint32_t spiSourceClock )
         t_brg++;
     }
 
-    if(t_brg > 511)
+    if(t_brg > 8191U)
     {
         return false;
     }
 
     SPI3BRG = t_brg;
     SPI3CON = (SPI3CON & (~(_SPI3CON_MODE16_MASK | _SPI3CON_MODE32_MASK | _SPI3CON_CKP_MASK | _SPI3CON_CKE_MASK))) |
-                            (setup->clockPolarity | setup->clockPhase | setup->dataBits);
+                            ((uint32_t)setup->clockPolarity | (uint32_t)setup->clockPhase | (uint32_t)setup->dataBits);
 
     return true;
 }
@@ -158,7 +159,7 @@ bool SPI3_Read(void* pReceiveData, size_t rxSize)
 
 bool SPI3_IsTransmitterBusy (void)
 {
-    return ((SPI3STAT & _SPI3STAT_SRMT_MASK) == 0)? true : false;
+    return ((SPI3STAT & _SPI3STAT_SRMT_MASK) == 0U)? true : false;
 }
 
 bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size_t rxSize)
@@ -171,7 +172,7 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
     bool isSuccess = false;
 
     /* Verify the request */
-    if (((txSize > 0) && (pTransmitData != NULL)) || ((rxSize > 0) && (pReceiveData != NULL)))
+    if (((txSize > 0U) && (pTransmitData != NULL)) || ((rxSize > 0U) && (pReceiveData != NULL)))
     {
         if (pTransmitData == NULL)
         {
@@ -186,9 +187,9 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
         SPI3STATCLR = _SPI3STAT_SPIROV_MASK;
 
         /* Flush out any unread data in SPI read buffer from the previous transfer */
-        while ((bool)(SPI3STAT & _SPI3STAT_SPIRBE_MASK) == false)
+        while ((SPI3STAT & _SPI3STAT_SPIRBE_MASK) == 0U)
         {
-            receivedData = SPI3BUF;
+            (void)SPI3BUF;
         }
 
         if (rxSize > txSize)
@@ -210,31 +211,42 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
             txSize >>= 1;
             dummySize >>= 1;
         }
+        else
+        {
+             /* Nothing to process */
+        }
 
-        /* Make sure transmit buffer is empty */
-        while((bool)(SPI3STAT & _SPI3STAT_SPITBE_MASK) == false);
+        while((SPI3STAT & _SPI3STAT_SPITBE_MASK) == 0U)
+        {
+            /* Wait for transmit buffer to be empty */
+        }
 
-        while ((txCount != txSize) || (dummySize != 0))
+        while ((txCount != txSize) || (dummySize != 0U))
         {
             if (txCount != txSize)
             {
                 if((_SPI3CON_MODE32_MASK) == (SPI3CON & (_SPI3CON_MODE32_MASK)))
                 {
-                    SPI3BUF = ((uint32_t*)pTransmitData)[txCount++];
+                    SPI3BUF = ((uint32_t*)pTransmitData)[txCount];
                 }
                 else if((_SPI3CON_MODE16_MASK) == (SPI3CON & (_SPI3CON_MODE16_MASK)))
                 {
-                    SPI3BUF = ((uint16_t*)pTransmitData)[txCount++];
+                    SPI3BUF = ((uint16_t*)pTransmitData)[txCount];
                 }
                 else
                 {
-                    SPI3BUF = ((uint8_t*)pTransmitData)[txCount++];
+                    SPI3BUF = ((uint8_t*)pTransmitData)[txCount];
                 }
+                txCount++;
             }
-            else if (dummySize > 0)
+            else if (dummySize > 0U)
             {
                 SPI3BUF = 0xff;
                 dummySize--;
+            }
+            else
+            {
+                 /* Nothing to process */
             }
 
             if (rxCount == rxSize)
@@ -242,19 +254,25 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
                 /* If inside this if condition, then it means that txSize > rxSize and all RX bytes are received */
 
                 /* For transmit only request, wait for buffer to become empty */
-                while((bool)(SPI3STAT & _SPI3STAT_SPITBE_MASK) == false);
+                while((SPI3STAT & _SPI3STAT_SPITBE_MASK) == 0U)
+                {
+                    /* Wait for buffer empty */
+                }
 
                 /* Read until the receive buffer is not empty */
-                while ((bool)(SPI3STAT & _SPI3STAT_SPIRBE_MASK) == false)
+                while ((SPI3STAT & _SPI3STAT_SPIRBE_MASK) == 0U)
                 {
-                    receivedData = SPI3BUF;
+                    (void)SPI3BUF;
                     dummyRxCntr++;
                 }
             }
             else
             {
                 /* If data is read, wait for the Receiver Data the data to become available */
-                while((SPI3STAT & _SPI3STAT_SPIRBE_MASK) == _SPI3STAT_SPIRBE_MASK);
+                while((SPI3STAT & _SPI3STAT_SPIRBE_MASK) == _SPI3STAT_SPIRBE_MASK)
+                {
+                  /* Do Nothing */
+                }
 
                 /* We have data waiting in the SPI buffer */
                 receivedData = SPI3BUF;
@@ -263,23 +281,28 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
                 {
                     if((_SPI3CON_MODE32_MASK) == (SPI3CON & (_SPI3CON_MODE32_MASK)))
                     {
-                        ((uint32_t*)pReceiveData)[rxCount++]  = receivedData;
+                        ((uint32_t*)pReceiveData)[rxCount]  = receivedData;
+                        rxCount++;
                     }
                     else if((_SPI3CON_MODE16_MASK) == (SPI3CON & (_SPI3CON_MODE16_MASK)))
                     {
-                        ((uint16_t*)pReceiveData)[rxCount++]  = receivedData;
+                        ((uint16_t*)pReceiveData)[rxCount]  = (uint16_t)receivedData;
+                        rxCount++;
                     }
                     else
                     {
-                        ((uint8_t*)pReceiveData)[rxCount++]  = receivedData;
+                        ((uint8_t*)pReceiveData)[rxCount]  = (uint8_t)receivedData;
+                        rxCount++;
                     }
                 }
             }
         }
 
         /* Make sure no data is pending in the shift register */
-        while ((bool)((SPI3STAT & _SPI3STAT_SRMT_MASK) == false));
-
+        while((SPI3STAT & _SPI3STAT_SRMT_MASK) == 0U)
+        {
+            /* Data pending in shift register */
+        }
         /* Make sure for every character transmitted a character is also received back.
          * If this is not done, we may prematurely exit this routine with the last bit still being
          * transmitted out. As a result, the application may prematurely deselect the CS line and also
@@ -292,14 +315,12 @@ bool SPI3_WriteRead(void* pTransmitData, size_t txSize, void* pReceiveData, size
                 /* Wait for all the RX bytes to be received. */
                 while ((bool)(SPI3STAT & _SPI3STAT_SPIRBE_MASK) == false)
                 {
-                    receivedData = SPI3BUF;
+                    (void)SPI3BUF;
                     dummyRxCntr++;
                 }
             }
         }
-
         isSuccess = true;
     }
-
     return isSuccess;
 }
