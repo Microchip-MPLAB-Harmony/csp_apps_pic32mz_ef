@@ -60,14 +60,23 @@
 // *****************************************************************************
 
 
-void DMA0_InterruptHandler( void );
-void DMA1_InterruptHandler( void );
-void DMA3_InterruptHandler( void );
-void DMA4_InterruptHandler( void );
-
-
-
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector declarations
+// *****************************************************************************
+// *****************************************************************************
+void DMA0_Handler (void);
+void DMA1_Handler (void);
+void DMA3_Handler (void);
+void DMA4_Handler (void);
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector definitions
+// *****************************************************************************
+// *****************************************************************************
 void __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
 {
     DMA0_InterruptHandler();

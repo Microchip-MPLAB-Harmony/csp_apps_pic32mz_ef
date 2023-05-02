@@ -57,6 +57,11 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void DMA0_InterruptHandler( void );
+void DMA1_InterruptHandler( void );
+void DMA3_InterruptHandler( void );
+void DMA4_InterruptHandler( void );
+
 
 
 #endif // INTERRUPTS_H
