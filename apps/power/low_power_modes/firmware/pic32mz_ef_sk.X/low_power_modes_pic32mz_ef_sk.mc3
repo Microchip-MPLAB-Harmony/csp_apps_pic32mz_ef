@@ -2151,7 +2151,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\rcon\plib_rcon.c</file>
-         <hash>eaedbec79e01c00d51634ac07a61e20acb13808324ebd50d9667cd2e5690a838</hash>
+         <hash>4bd00d8b90d58fd729f6ac48a9578b861743231ca040f2be31afb6ed0384e34e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\tmr1\plib_tmr1.c</file>
@@ -2199,11 +2199,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c</file>
-         <hash>4192d694ac0898ed878b82079b6f9a762af3f5c1f10c3f199db7661aafd91ec5</hash>
+         <hash>b0395f9dc1f1710b5bbad58045fbcd51ef150d6e489210c01b0d6f5e70cbf76c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c</file>
-         <hash>b15e74c7ec0bed1105ce0d54482902bd1685b8ef061ad21e86472299d36bf51c</hash>
+         <hash>91e70b0aa9a2837f0667abe1710a2e776615369061baf1cf917e78f66bf29e53</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\coretimer\plib_coretimer.c</file>
@@ -2235,7 +2235,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.h</file>
-         <hash>64c816698d47e712722f6a414bd155d2113300cf5c94fe0753037197c3c65f94</hash>
+         <hash>99ea8255ad17a7d7368d57f2df1280fffac1961e1b89a2cb62bc35be8072e5bd</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>

@@ -481,7 +481,7 @@
 
 #define    INT_SOURCE_ADC7_WARM   (_ADC7_WARM_VECTOR)
 
-  /* MISRAC 2012 deviation block end */
+    /* MISRAC 2012 deviation block end */
 typedef uint32_t INT_SOURCE;
 
 
