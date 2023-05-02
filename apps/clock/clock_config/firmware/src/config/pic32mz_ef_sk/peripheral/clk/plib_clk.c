@@ -85,9 +85,9 @@
 void CLK_Initialize( void )
 {
     /* unlock system for clock configuration */
-    SYSKEY = 0x00000000;
-    SYSKEY = 0xAA996655;
-    SYSKEY = 0x556699AA;
+    SYSKEY = 0x00000000U;
+    SYSKEY = 0xAA996655U;
+    SYSKEY = 0x556699AAU;
 
 
     /* Set up Reference Clock 4 */
@@ -98,7 +98,7 @@ void CLK_Initialize( void )
     REFO4CON = 0x190200;
 
     /* Enable oscillator (ON bit) and Enable Output (OE bit) */
-    REFO4CONSET = 0x00001000 | 0x00008000;
+    REFO4CONSET = 0x00001000U | 0x00008000U;
 
   
 
@@ -106,16 +106,16 @@ void CLK_Initialize( void )
 
     CFGCONbits.PMDLOCK = 0;
 
-    PMD1 = 0x1001;
-    PMD2 = 0x3;
-    PMD3 = 0x1ff01ff;
-    PMD4 = 0x1ff;
-    PMD5 = 0x301f3f3f;
-    PMD6 = 0x10830001;
-    PMD7 = 0x500000;
+    PMD1 = 0x1001U;
+    PMD2 = 0x3U;
+    PMD3 = 0x1ff01ffU;
+    PMD4 = 0x1ffU;
+    PMD5 = 0x301f3f3fU;
+    PMD6 = 0x10830001U;
+    PMD7 = 0x500000U;
 
     CFGCONbits.PMDLOCK = 1;
 
     /* Lock system since done with clock configuration */
-    SYSKEY = 0x33333333;
+    SYSKEY = 0x33333333U;
 }
