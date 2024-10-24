@@ -27,7 +27,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -8357,7 +8357,7 @@
    <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>dfdc87418751b47e94d6fee1c21f4c756ed48378c38ed27b0d811c3cefc21e27</hash>
+         <hash>14bdb8f9e70f37f46e17f27e9205bb62d4a52bdd7d158efa7d4b968b7ac9372d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device.h</file>
@@ -8369,11 +8369,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\initialization.c</file>
-         <hash>8f8fa30051a4139da7379439d2d52afc8be9a9cbf85ed4603385c1b72045ca40</hash>
+         <hash>712e4e755d91c708bef5f87e391d2b9f3deb0874c884e8fba4743e00b4766e78</hash>
       </entry>
       <entry>
          <file>..\src\config\default\interrupts.c</file>
-         <hash>8242cc683d17fe85a252947d41905f16549d003bd2ffe2c4d774038f27d3f4eb</hash>
+         <hash>d1eb5e77f6cc0ca59a4b6547883574c74eb6281b4eb6d70d095befa8290773fd</hash>
       </entry>
       <entry>
          <file>..\src\config\default\interrupts.h</file>
@@ -8381,7 +8381,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\p32MZ2048EFH144.ld</file>
-         <hash>bb79d747f7a82dd825972c04040708a3816a5ec975048a3decfb71aa3c0eec7c</hash>
+         <hash>11adbfaeda6e28c761f00e2e60d6e7295fd8f5deffcefba4808464abca0c2a5c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\adchs\plib_adchs.c</file>
@@ -8397,7 +8397,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.c</file>
-         <hash>dcc176d7003c73b25e24cdc27680cde4c71a17e2c507e1471ff04a520770f0c4</hash>
+         <hash>cd243c1b10df06f774ab95a2c54fc4cb7ef2afc6640fa0ed32e248c7b790d9d9</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.h</file>
@@ -8425,7 +8425,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\gpio\plib_gpio.h</file>
-         <hash>df6d121e8464522528a5a7b03eae4bc3436ee5ed9c9af4ad80563bdecd26dc8e</hash>
+         <hash>108fc503975f63e53fb4ce73a77f7bd0ff77c1bca060b91a7ad75b74c1861488</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\tmr\plib_tmr3.c</file>

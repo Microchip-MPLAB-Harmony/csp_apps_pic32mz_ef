@@ -75,12 +75,12 @@ void DMA0_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_ADC_DATA3_VECTOR, ipl1SRS) ADC_DATA3_Handler (void)
+void __attribute__((used)) __ISR(_ADC_DATA3_VECTOR, ipl1SRS) ADC_DATA3_Handler (void)
 {
     ADC_DATA3_InterruptHandler();
 }
 
-void __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
+void __attribute__((used)) __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
 {
     DMA0_InterruptHandler();
 }
