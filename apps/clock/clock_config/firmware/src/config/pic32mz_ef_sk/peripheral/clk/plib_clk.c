@@ -89,19 +89,6 @@ void CLK_Initialize( void )
     SYSKEY = 0xAA996655U;
     SYSKEY = 0x556699AAU;
 
-
-    /* Set up Reference Clock 4 */
-    /* REFO4CON register */
-    /* ROSEL =  SYSCLK */
-    /* DIVSWEN = 1 */
-    /* RODIV = 25 */
-    REFO4CON = 0x190200;
-
-    /* Enable oscillator (ON bit) and Enable Output (OE bit) */
-    REFO4CONSET = 0x00001000U | 0x00008000U;
-
-  
-
     /* Peripheral Module Disable Configuration */
 
     CFGCONbits.PMDLOCK = 0;
@@ -115,6 +102,19 @@ void CLK_Initialize( void )
     PMD7 = 0x500000U;
 
     CFGCONbits.PMDLOCK = 1;
+
+
+    /* Set up Reference Clock 4 */
+    /* REFO4CON register */
+    /* ROSEL =  SYSCLK */
+    /* DIVSWEN = 1 */
+    /* RODIV = 25 */
+    REFO4CON = 0x190200;
+
+    /* Enable oscillator (ON bit) and Enable Output (OE bit) */
+    REFO4CONSET = 0x00001000U | 0x00008000U;
+
+      
 
     /* Lock system since done with clock configuration */
     SYSKEY = 0x33333333U;
