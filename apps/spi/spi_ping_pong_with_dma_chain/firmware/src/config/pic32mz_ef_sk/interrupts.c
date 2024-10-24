@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -77,22 +77,22 @@ void DMA4_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
+void __attribute__((used)) __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
 {
     DMA0_InterruptHandler();
 }
 
-void __ISR(_DMA1_VECTOR, ipl1SRS) DMA1_Handler (void)
+void __attribute__((used)) __ISR(_DMA1_VECTOR, ipl1SRS) DMA1_Handler (void)
 {
     DMA1_InterruptHandler();
 }
 
-void __ISR(_DMA3_VECTOR, ipl1SRS) DMA3_Handler (void)
+void __attribute__((used)) __ISR(_DMA3_VECTOR, ipl1SRS) DMA3_Handler (void)
 {
     DMA3_InterruptHandler();
 }
 
-void __ISR(_DMA4_VECTOR, ipl1SRS) DMA4_Handler (void)
+void __attribute__((used)) __ISR(_DMA4_VECTOR, ipl1SRS) DMA4_Handler (void)
 {
     DMA4_InterruptHandler();
 }
