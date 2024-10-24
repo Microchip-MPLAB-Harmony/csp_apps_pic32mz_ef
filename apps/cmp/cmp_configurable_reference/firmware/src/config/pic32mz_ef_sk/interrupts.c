@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -74,7 +74,7 @@ void COMPARATOR_1_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_COMPARATOR_1_VECTOR, ipl1SRS) COMPARATOR_1_Handler (void)
+void __attribute__((used)) __ISR(_COMPARATOR_1_VECTOR, ipl1SRS) COMPARATOR_1_Handler (void)
 {
     COMPARATOR_1_InterruptHandler();
 }
