@@ -89,12 +89,6 @@ void CLK_Initialize( void )
     SYSKEY = 0xAA996655U;
     SYSKEY = 0x556699AAU;
 
-    /* Peripheral Bus 3 is by default enabled, set its divisor */
-    PB3DIVbits.PBDIV = 5;
-
-
-  
-
     /* Peripheral Module Disable Configuration */
 
     CFGCONbits.PMDLOCK = 0;
@@ -108,6 +102,12 @@ void CLK_Initialize( void )
     PMD7 = 0xffffffefU;
 
     CFGCONbits.PMDLOCK = 1;
+
+    /* Peripheral Bus 3 is by default enabled, set its divisor */
+    PB3DIVbits.PBDIV = 5;
+
+
+      
 
     /* Lock system since done with clock configuration */
     SYSKEY = 0x33333333U;
