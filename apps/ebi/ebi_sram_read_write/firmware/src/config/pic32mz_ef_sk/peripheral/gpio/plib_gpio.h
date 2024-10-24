@@ -69,6 +69,7 @@
 #define LED1_OutputEnable()      (TRISHCLR = (1U<<0))
 #define LED1_InputEnable()       (TRISHSET = (1U<<0))
 #define LED1_Get()               ((PORTH >> 0) & 0x1U)
+#define LED1_GetLatch()          ((LATH >> 0) & 0x1U)
 #define LED1_PIN                  GPIO_PIN_RH0
 
 /*** Macros for LED3 pin ***/
@@ -78,6 +79,7 @@
 #define LED3_OutputEnable()      (TRISHCLR = (1U<<2))
 #define LED3_InputEnable()       (TRISHSET = (1U<<2))
 #define LED3_Get()               ((PORTH >> 2) & 0x1U)
+#define LED3_GetLatch()          ((LATH >> 2) & 0x1U)
 #define LED3_PIN                  GPIO_PIN_RH2
 
 /*** Macros for CAM_PDN pin ***/
@@ -87,6 +89,7 @@
 #define CAM_PDN_OutputEnable()      (TRISJCLR = (1U<<7))
 #define CAM_PDN_InputEnable()       (TRISJSET = (1U<<7))
 #define CAM_PDN_Get()               ((PORTJ >> 7) & 0x1U)
+#define CAM_PDN_GetLatch()          ((LATJ >> 7) & 0x1U)
 #define CAM_PDN_PIN                  GPIO_PIN_RJ7
 
 
@@ -306,7 +309,7 @@ void GPIO_PortOutputEnable(GPIO_PORT port, uint32_t mask);
 
 static inline void GPIO_PinWrite(GPIO_PIN pin, bool value)
 {
-	 uint32_t xvalue = (uint32_t)value;
+     uint32_t xvalue = (uint32_t)value;
     GPIO_PortWrite((pin>>4U), (uint32_t)(0x1U) << (pin & 0xFU), (xvalue) << (pin & 0xFU));
 }
 
