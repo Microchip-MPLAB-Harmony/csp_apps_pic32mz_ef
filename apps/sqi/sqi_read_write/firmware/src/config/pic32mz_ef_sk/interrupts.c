@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -74,7 +74,7 @@ void SQI1_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_SQI1_VECTOR, ipl1SRS) SQI1_Handler (void)
+void __attribute__((used)) __ISR(_SQI1_VECTOR, ipl1SRS) SQI1_Handler (void)
 {
     SQI1_InterruptHandler();
 }
