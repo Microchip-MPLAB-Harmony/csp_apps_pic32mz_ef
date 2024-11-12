@@ -30,23 +30,6 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="true">
-      <logicalFolder displayName="pic32mk_mcj_curiosity_pro.mhc" name="f1" projectFiles="true">
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/cdac1.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/core.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/dfp.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/project.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/settings.yml</itemPath>
-        <itemPath>../../../../../../csp_apps_pic32mk/apps/cdac/cdac_wav_gen/firmware/src/config/pic32mk_mcj_curiosity_pro/pic32mk_mcj_curiosity_pro.mhc/tmr1.yml</itemPath>
-      </logicalFolder>
-      <logicalFolder displayName="pic32mz_ef_sk.mhc" name="f2" projectFiles="true">
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/project.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/uart2.yml</itemPath>
-      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
       <itemPath>dmac_usart_pattern_matching_pic32mz_ef_sk.mc3</itemPath>

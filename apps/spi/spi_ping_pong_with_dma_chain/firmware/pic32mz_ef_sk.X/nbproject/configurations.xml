@@ -37,14 +37,6 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="true">
-      <logicalFolder displayName="pic32mz_ef_sk.mhc" name="f1" projectFiles="true">
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/core.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/project.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/pic32mz_ef_sk/pic32mz_ef_sk.mhc/spi1.yml</itemPath>
-      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
       <itemPath>spi_ping_pong_with_dma_chain_pic32mz_ef_sk.mc3</itemPath>
