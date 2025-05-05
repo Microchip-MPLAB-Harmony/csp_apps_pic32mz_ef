@@ -197,10 +197,10 @@ typedef struct
     uint32_t jedec_id;
 
     /* Read Buffer */
-    uint8_t readBuffer[READ_BUFFER_SIZE] CACHE_ALIGN;
+    uint8_t readBuffer[READ_BUFFER_SIZE];
 
     /* Write Buffer*/
-    uint8_t writeBuffer[WRITE_BUFFER_SIZE] CACHE_ALIGN;
+    uint8_t writeBuffer[WRITE_BUFFER_SIZE];
 } APP_DATA;
 
 /* SST26 Command set
