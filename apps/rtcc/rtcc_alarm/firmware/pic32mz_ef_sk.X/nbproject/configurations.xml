@@ -30,9 +30,18 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="true">
+      <logicalFolder name="rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk" displayName="rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk" projectFiles="true">
+        <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/components/core.yml</itemPath>
+          <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/components/dfp.yml</itemPath>
+          <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/components/rtcc.yml</itemPath>
+          <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/components/stdio.yml</itemPath>
+          <itemPath>rtcc_alarm_pic32mz_ef_sk_pic32mz_ef_sk/components/uart2.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
-      <itemPath>rtcc_alarm_pic32mz_ef_sk.mc3</itemPath>
     </logicalFolder>
     <logicalFolder displayName="Linker Files" name="LinkerScript" projectFiles="true">
       <logicalFolder displayName="config" name="f1" projectFiles="true">
@@ -85,7 +94,7 @@
         <targetPluginBoard/>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

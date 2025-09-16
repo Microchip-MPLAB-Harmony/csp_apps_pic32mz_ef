@@ -1,0 +1,55 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MZ2048EFH144
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- core
+- dfp
+- rtcc
+- stdio
+- uart2
+generatedFileHashHistoryMap:
+- file: ..\src\config\pic32mz_ef_sk\definitions.h
+  hash: fb10e364261f99452c6f9f681425627fe060a4b7ff5a90f654e3e5c5e9b77b60
+- file: ..\src\config\pic32mz_ef_sk\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mz_ef_sk\exceptions.c
+  hash: 08af3364c3e5ad8bc07f5300f41ea8ded05493f9a5e9b77947ab3426322671bb
+- file: ..\src\config\pic32mz_ef_sk\initialization.c
+  hash: e7df3f18b2c7022c1fc4a5aa52696aedc52760a79d14a0d8afe5a82856fcd0fa
+- file: ..\src\config\pic32mz_ef_sk\interrupts.c
+  hash: ef60cffabe3c379abf08795f2d368d1c20d73595066102cb973ea50182738cf2
+- file: ..\src\config\pic32mz_ef_sk\interrupts.h
+  hash: ec8282f1c2f4a1c668b783d1b71f5d3cb4c8130a40dd208cb0417c24b4a02fdb
+- file: ..\src\config\pic32mz_ef_sk\p32MZ2048EFH144.ld
+  hash: 11adbfaeda6e28c761f00e2e60d6e7295fd8f5deffcefba4808464abca0c2a5c
+- file: ..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.c
+  hash: 2427d1b12f067771ac59e7d5d631e684e0515bc67dfb969233a9a9c26ed403a4
+- file: ..\src\config\pic32mz_ef_sk\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.c
+  hash: 7eede1c2661d3e67410ce83a20a45bc6259aab3dbdbf5df1e77c6b76f76f1b94
+- file: ..\src\config\pic32mz_ef_sk\peripheral\evic\plib_evic.h
+  hash: 486ea1d5c05801c1d1d96f3d3d5c5af20a9794640d4ca54f98c28add9188665f
+- file: ..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.c
+  hash: e41936cb7eb6a55e4ccc7e3d2fb94d0ce6d32d0205352015c239ebdc8008015a
+- file: ..\src\config\pic32mz_ef_sk\peripheral\gpio\plib_gpio.h
+  hash: 108fc503975f63e53fb4ce73a77f7bd0ff77c1bca060b91a7ad75b74c1861488
+- file: ..\src\config\pic32mz_ef_sk\peripheral\rtcc\plib_rtcc.c
+  hash: fef540b606d50a0f77f1206fb12f043d63763a2e3a84cfc040c2fa16a3deb429
+- file: ..\src\config\pic32mz_ef_sk\peripheral\rtcc\plib_rtcc.h
+  hash: f8fc6312e3f92c59a94164dc7324725fad809dd1adfea0a77e8e22439bbfd594
+- file: ..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart2.c
+  hash: 8f4941d8f06ef7768f0ebe2fe12764d578c9e68f4dd60bd8ae514cdee4046b40
+- file: ..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart2.h
+  hash: ec165aa3fd6aa8c6069ef8bc97ea1d99ae4b300be7ea02a8a601b7384b2ad990
+- file: ..\src\config\pic32mz_ef_sk\peripheral\uart\plib_uart_common.h
+  hash: b87295faadae4157d5880e22970f89094f2b51e1866930040a90ba49c6b29797
+- file: ..\src\config\pic32mz_ef_sk\stdio\xc32_monitor.c
+  hash: ebf5bb594a90f0fa360e2a086014a3d15ce37ed290e46e94aa1e4bf9b5610146
+- file: ..\src\config\pic32mz_ef_sk\toolchain_specifics.h
+  hash: fd2fc7bbe60706409cc0c0a525825c0194f6f71adc0a89e6310041f06dc2f645
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5
