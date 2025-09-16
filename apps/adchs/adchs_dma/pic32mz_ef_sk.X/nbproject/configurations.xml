@@ -38,8 +38,18 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="pic32mz_ef_sk_default" displayName="pic32mz_ef_sk_default" projectFiles="true">
+        <itemPath>pic32mz_ef_sk_default/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>pic32mz_ef_sk_default/components/adchs.yml</itemPath>
+          <itemPath>pic32mz_ef_sk_default/components/core.yml</itemPath>
+          <itemPath>pic32mz_ef_sk_default/components/dfp.yml</itemPath>
+          <itemPath>pic32mz_ef_sk_default/components/stdio.yml</itemPath>
+          <itemPath>pic32mz_ef_sk_default/components/tmr3.yml</itemPath>
+          <itemPath>pic32mz_ef_sk_default/components/uart2.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>pic32mz_ef_sk.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
@@ -95,7 +105,7 @@
         <targetPluginBoard/>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
