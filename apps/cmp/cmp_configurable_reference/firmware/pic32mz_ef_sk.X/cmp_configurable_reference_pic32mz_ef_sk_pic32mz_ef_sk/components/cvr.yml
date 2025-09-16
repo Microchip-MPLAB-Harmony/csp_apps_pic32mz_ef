@@ -1,0 +1,52 @@
+configVersion: 1.0.0
+componentName: cvr
+coreVersion: 5.8.2
+device: PIC32MZ2048EFH144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: cvr
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: cvr
+          x: '500'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CVRCON_VALUE:
+      attributes:
+        id: CVRCON_VALUE
+      children:
+      - children:
+        - attributes:
+            id: cvr
+            value: '15'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CVR_CVRCON_CVR:
+      attributes:
+        id: CVR_CVRCON_CVR
+      children:
+      - children:
+        - attributes:
+            value: '15'
+          type: User
+        type: Values
+      type: Integer
+  userData: {}

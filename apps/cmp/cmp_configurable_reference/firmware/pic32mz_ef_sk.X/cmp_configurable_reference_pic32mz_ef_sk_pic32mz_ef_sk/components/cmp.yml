@@ -1,0 +1,72 @@
+configVersion: 1.0.0
+componentName: cmp
+coreVersion: 5.8.2
+device: PIC32MZ2048EFH144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: cmp
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: cmp
+          x: '340'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CM1CON_VALUE:
+      attributes:
+        id: CM1CON_VALUE
+      children:
+      - children:
+        - attributes:
+            id: cmp
+            value: '82'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CMP_CM1CON_CCH:
+      attributes:
+        id: CMP_CM1CON_CCH
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_CM1CON_CREF:
+      attributes:
+        id: CMP_CM1CON_CREF
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_CM1CON_EVPOL:
+      attributes:
+        id: CMP_CM1CON_EVPOL
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+  userData: {}
