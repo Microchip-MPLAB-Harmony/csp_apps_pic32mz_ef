@@ -40,9 +40,21 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk" displayName="low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk" projectFiles="true">
+        <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/core.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/core_timer.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/dfp.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/power.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/rcon.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/stdio.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/tmr1.yml</itemPath>
+          <itemPath>low_power_modes_pic32mz_ef_sk_pic32mz_ef_sk/components/uart2.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_ef_sk/harmony-manifest-success.yml</itemPath>
-      <itemPath>low_power_modes_pic32mz_ef_sk.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
@@ -104,7 +116,7 @@
         <targetPluginBoard/>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
