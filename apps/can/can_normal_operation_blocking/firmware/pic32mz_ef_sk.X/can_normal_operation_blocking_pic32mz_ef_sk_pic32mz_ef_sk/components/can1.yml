@@ -1,0 +1,160 @@
+configVersion: 1.0.0
+componentName: can1
+coreVersion: 5.8.2
+device: PIC32MZ2048EFH144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: can1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: can1
+          x: '340'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    BRP:
+      attributes:
+        id: BRP
+      children:
+      - children:
+        - attributes:
+            value: '9'
+          type: User
+        type: Values
+      type: Integer
+    CALCULATED_ERRORRATE:
+      attributes:
+        id: CALCULATED_ERRORRATE
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0.000'
+          type: Dynamic
+        type: Values
+      type: String
+    CALCULATED_NOMINAL_BITRATE:
+      attributes:
+        id: CALCULATED_NOMINAL_BITRATE
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '500'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CAN_CORE_CLOCK_FREQ:
+      attributes:
+        id: CAN_CORE_CLOCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '100000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NOMINAL_SAMPLE_POINT:
+      attributes:
+        id: NOMINAL_SAMPLE_POINT
+      children:
+      - children:
+        - attributes:
+            value: '75.0'
+          type: User
+        type: Values
+      type: Float
+    PHASE1:
+      attributes:
+        id: PHASE1
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Integer
+    PHASE2:
+      attributes:
+        id: PHASE2
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+    PROPAG:
+      attributes:
+        id: PROPAG
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    PROPAG_TIME:
+      attributes:
+        id: PROPAG_TIME
+      children:
+      - children:
+        - attributes:
+            value: '300'
+          type: User
+        type: Values
+      type: Integer
+    SJW:
+      attributes:
+        id: SJW
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TIME_QUANTA_PERIOD:
+      attributes:
+        id: TIME_QUANTA_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '200.000'
+          type: Dynamic
+        type: Values
+      type: String
+    TOTAL_TIME_QUANTA:
+      attributes:
+        id: TOTAL_TIME_QUANTA
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '10'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
