@@ -1,0 +1,237 @@
+configVersion: 1.0.0
+componentName: ebi
+coreVersion: 5.8.2
+device: PIC32MZ2048EFH144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: ebi
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: ebi
+          x: '347'
+          y: '22'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CFGEBIA_EBIADD:
+      attributes:
+        id: CFGEBIA_EBIADD
+      children:
+      - children:
+        - attributes:
+            value: '19'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CFGEBIC_EBIBSEN0:
+      attributes:
+        id: CFGEBIC_EBIBSEN0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CFGEBIC_EBIBSEN1:
+      attributes:
+        id: CFGEBIC_EBIBSEN1
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CFGEBIC_EBICSEN0:
+      attributes:
+        id: CFGEBIC_EBICSEN0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CFGEBIC_EBIDAT:
+      attributes:
+        id: CFGEBIC_EBIDAT
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CFGEBIC_EBIDAT0:
+      attributes:
+        id: CFGEBIC_EBIDAT0
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    CFGEBIC_EBIDAT1:
+      attributes:
+        id: CFGEBIC_EBIDAT1
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    CFGEBIC_EBIOEEN:
+      attributes:
+        id: CFGEBIC_EBIOEEN
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CFGEBIC_EBIWEEN:
+      attributes:
+        id: CFGEBIC_EBIWEEN
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CFGEBIC_VALUE:
+      attributes:
+        id: CFGEBIC_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: '13075'
+          type: Dynamic
+        type: Values
+      type: Hex
+    EBIMSK0_MEMSIZE:
+      attributes:
+        id: EBIMSK0_MEMSIZE
+      children:
+      - children:
+        - attributes:
+            value: '6'
+          type: User
+        type: Values
+      type: KeyValueSet
+    EBIMSK0_VALUE:
+      attributes:
+        id: EBIMSK0_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: '38'
+          type: Dynamic
+        type: Values
+      type: Hex
+    EBISMCON_SMDWIDTH0:
+      attributes:
+        id: EBISMCON_SMDWIDTH0
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    EBISMCON_VALUE:
+      attributes:
+        id: EBISMCON_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Hex
+    EBISMT0_TAS:
+      attributes:
+        id: EBISMT0_TAS
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: Integer
+    EBISMT0_TBTA:
+      attributes:
+        id: EBISMT0_TBTA
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    EBISMT0_TPRC:
+      attributes:
+        id: EBISMT0_TPRC
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    EBISMT0_TRC:
+      attributes:
+        id: EBISMT0_TRC
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: Integer
+    EBISMT0_TWP:
+      attributes:
+        id: EBISMT0_TWP
+      children:
+      - children:
+        - attributes:
+            value: '10'
+          type: User
+        type: Values
+      type: Integer
+    EBISMT0_VALUE:
+      attributes:
+        id: EBISMT0_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ebi
+            value: '10626'
+          type: Dynamic
+        type: Values
+      type: Hex
+  userData: {}
