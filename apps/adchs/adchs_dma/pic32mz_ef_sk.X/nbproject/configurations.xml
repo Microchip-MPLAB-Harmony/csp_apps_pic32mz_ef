@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
@@ -37,9 +39,12 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
-      <logicalFolder name="pic32mz_ef_sk_default" displayName="pic32mz_ef_sk_default" projectFiles="true">
-        <itemPath>pic32mz_ef_sk_default/mcc-config.mc4</itemPath>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="pic32mz_ef_sk_default"
+                     displayName="pic32mz_ef_sk_default"
+                     projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
           <itemPath>pic32mz_ef_sk_default/components/adchs.yml</itemPath>
           <itemPath>pic32mz_ef_sk_default/components/core.yml</itemPath>
@@ -48,17 +53,22 @@
           <itemPath>pic32mz_ef_sk_default/components/tmr3.yml</itemPath>
           <itemPath>pic32mz_ef_sk_default/components/uart2.yml</itemPath>
         </logicalFolder>
+        <itemPath>pic32mz_ef_sk_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <itemPath>../src/config/default/p32MZ2048EFH144.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
@@ -101,9 +111,9 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32MZ2048EFH144</targetDevice>
-        <targetHeader/>
-        <targetPluginBoard/>
-        <platformTool>PKOBSKDEPlatformTool</platformTool>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool></platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
@@ -123,7 +133,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile/>
+          <alternateLoadableFile></alternateLoadableFile>
         </loading>
         <subordinates>
         </subordinates>
@@ -131,15 +141,15 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep/>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep/>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <C32>
-        <property key="additional-warnings" value="true"/>
+        <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
         <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
@@ -151,7 +161,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
-        <property key="make-warnings-into-errors" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
         <property key="optimization-level" value="-O1"/>
         <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
