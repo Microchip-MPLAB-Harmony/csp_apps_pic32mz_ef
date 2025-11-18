@@ -1,0 +1,133 @@
+generatedFiles:
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/adchs/plib_adchs.h
+  projectFolder: config/default/peripheral/adchs
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/adchs/plib_adchs_common.h
+  projectFolder: config/default/peripheral/adchs
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/adchs/plib_adchs.c
+  projectFolder: config/default/peripheral/adchs
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/uart/plib_uart_common.h
+  projectFolder: config/default/peripheral/uart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/uart/plib_uart2.h
+  projectFolder: config/default/peripheral/uart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/uart/plib_uart2.c
+  projectFolder: config/default/peripheral/uart
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/tmr/plib_tmr_common.h
+  projectFolder: config/default/peripheral/tmr
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/tmr/plib_tmr3.h
+  projectFolder: config/default/peripheral/tmr
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/tmr/plib_tmr3.c
+  projectFolder: config/default/peripheral/tmr
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/toolchain_specifics.h
+  projectFolder: config/default
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/main.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/definitions.h
+  projectFolder: config/default
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/initialization.c
+  projectFolder: config/default
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/interrupts.c
+  projectFolder: config/default
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/interrupts.h
+  projectFolder: config/default
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/exceptions.c
+  projectFolder: config/default
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/p32MZ2048EFH144.ld
+  projectFolder: config/default
+  type: Linker Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/stdio/xc32_monitor.c
+  projectFolder: config/default/stdio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/clk/plib_clk.h
+  projectFolder: config/default/peripheral/clk
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/clk/plib_clk.c
+  projectFolder: config/default/peripheral/clk
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/gpio/plib_gpio.h
+  projectFolder: config/default/peripheral/gpio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/gpio/plib_gpio.c
+  projectFolder: config/default/peripheral/gpio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/evic/plib_evic.c
+  projectFolder: config/default/peripheral/evic
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/evic/plib_evic.h
+  projectFolder: config/default/peripheral/evic
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/dmac/plib_dmac.h
+  projectFolder: config/default/peripheral/dmac
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/peripheral/dmac/plib_dmac.c
+  projectFolder: config/default/peripheral/dmac
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32mz_ef/apps/adchs/adchs_dma/src/config/default/device.h
+  projectFolder: config/default
+  type: Header Files
+generatedSettings:
+- category: C32-LD
+  key: preprocessor-macros
+  value: ''
+- category: C32
+  key: generate-micro-compressed-code
+  value: 'false'
+- category: C32CPP
+  key: generate-micro-compressed-code
+  value: 'false'
+- category: C32-LD
+  key: heap-size
+  value: '512'
+- category: C32
+  key: extra-include-directories
+  value: ../src;../src/config/default;
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src;../src/config/default;
+- category: C32-LD
+  key: no-device-startup-code
+  value: 'true'
+removedFiles: [
+  ]

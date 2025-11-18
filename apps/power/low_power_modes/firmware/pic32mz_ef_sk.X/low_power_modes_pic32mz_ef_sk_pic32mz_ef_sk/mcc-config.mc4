@@ -15,7 +15,7 @@ modules:
 - uart2
 generatedFileHashHistoryMap:
 - file: ..\src\config\pic32mz_ef_sk\definitions.h
-  hash: ccdda902310a1a34943a1dd9351168a92737f7c581103f0343cf4e744f4ff97a
+  hash: 4e203001bab24337ca5ee7f9bb3145b37983f6bba07eef4f0aaa33f4491cecb3
 - file: ..\src\config\pic32mz_ef_sk\device.h
   hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
 - file: ..\src\config\pic32mz_ef_sk\exceptions.c
